@@ -3,7 +3,7 @@ using Unilib.CommunicationServer.Common;
 using Unilib.Messages;
 using Unilib.CommunicationServer.DataEntities;
 
-namespace Unilib.CommunicationServer
+namespace Unilib.CommunicationServer.Handlers
 {
     public class CreateAuthorCommandHandler : IHandleMessages<CreateAuthorCommand>
     {

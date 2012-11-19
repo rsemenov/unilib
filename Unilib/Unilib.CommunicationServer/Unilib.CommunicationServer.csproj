@@ -66,11 +66,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataEntities\RecordEntity.cs" />
     <Compile Include="Handlers\CreateAuthorCommandHandler.cs" />
     <Compile Include="DataEntities\AuthorEntity.cs" />
     <Compile Include="Common\IEntity.cs" />
     <Compile Include="Common\IRepository.cs" />
+    <Compile Include="Handlers\CreateRecordCommandHandler.cs" />
     <Compile Include="Mappings\AuthorMap.cs" />
+    <Compile Include="Mappings\RecordMap.cs" />
     <Compile Include="MessageEndpoint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
