@@ -12,7 +12,7 @@ namespace Unilib.CommunicationServer.Mappings
         public AuthorMap()
         {
             //Schema("UniLib");
-            Id(x => x.AuthorId).Column("AuthorId");
+            Id(x => x.AuthorId).Column("AuthorId").Unique();
             Map(x => x.FirstPart).Not.Nullable();
             Map(x => x.FullName).Not.Nullable();
             Map(x => x.Name).Not.Nullable();

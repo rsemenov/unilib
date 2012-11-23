@@ -26,7 +26,7 @@ namespace Unilib.CommunicationServer.Handlers
                                  SortTitle = message.SortTitle,
                                  TitleDescription = message.TitleDescription
                              };
-            RecordsRepository.SaveOrUpdate(entity);
+            RecordsRepository.Add(entity);
         }
 
         #endregion

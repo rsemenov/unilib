@@ -20,4 +20,13 @@ namespace Unilib.CommunicationServer.Mappings
             Table("Records");
         }
     }
+
+    public class ThemeClassificationMap : ClassMap<ThemeClassificationEntity>
+    {
+        public ThemeClassificationMap()
+        {
+            Id(x => x.Id).Column("Id").Unique();
+            //TODO
+        }
+    }
 }

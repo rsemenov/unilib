@@ -6,7 +6,8 @@ namespace Unilib.CommunicationServer.Common
     {
         ISessionFactory SessionFactory { get; set; }
 
-        void SaveOrUpdate(T entity);
+        void Add(T entity);
+        void Update(T entity);
     }
 
     public class Repository<T> : IRepository<T> where T:IEntity
@@ -15,13 +16,26 @@ namespace Unilib.CommunicationServer.Common
 
         public ISessionFactory SessionFactory { get; set; }
 
-        public void SaveOrUpdate(T entity)
+        public void Add(T entity)
         {
             using (var session = SessionFactory.OpenSession())
             {
                 using (var transaction = session.BeginTransaction())
                 {
                     session.Save(entity);
+                    transaction.Commit();
+                }
+            }
+
+        }
+
+        public void Update(T entity)
+        {
+            using (var session = SessionFactory.OpenSession())
+            {
+                using (var transaction = session.BeginTransaction())
+                {
+                    session.Update(entity);
                     transaction.Commit();
                 }
             }

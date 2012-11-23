@@ -66,6 +66,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataEntities\AuthorRecordEntity.cs" />
     <Compile Include="DataEntities\RecordEntity.cs" />
     <Compile Include="Handlers\CreateAuthorCommandHandler.cs" />
     <Compile Include="DataEntities\AuthorEntity.cs" />

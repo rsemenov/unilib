@@ -23,7 +23,7 @@ namespace Unilib.CommunicationServer.Handlers
                 OtherNames = message.OtherNames,
                 SufixPart = message.SufixPart
             };
-            AuthorRepository.SaveOrUpdate(entity);
+            AuthorRepository.Add(entity);
         }
 
         #endregion
