@@ -1,7 +1,7 @@
 using System;
-using Unilib.CommunicationServer.Common;
+using Unilib.Common.Interfaces;
 
-namespace Unilib.CommunicationServer.DataEntities
+namespace Unilib.Common.DataEntities
 {
     public class AuthorRecordEntity:IEntity
     {

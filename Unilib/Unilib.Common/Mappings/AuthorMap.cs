@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using FluentNHibernate.Mapping;
-using Unilib.CommunicationServer.DataEntities;
+﻿using FluentNHibernate.Mapping;
+using Unilib.Common.DataEntities;
 
-namespace Unilib.CommunicationServer.Mappings
+namespace Unilib.Common.Mappings
 {
     public class AuthorMap : ClassMap<AuthorEntity>
     {

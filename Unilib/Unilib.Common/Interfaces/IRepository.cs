@@ -1,6 +1,6 @@
 ﻿using NHibernate;
 
-namespace Unilib.CommunicationServer.Common
+namespace Unilib.Common.Interfaces
 {
     public interface IRepository<in T> where T:IEntity
     {

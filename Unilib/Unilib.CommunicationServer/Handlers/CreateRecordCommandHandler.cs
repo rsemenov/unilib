@@ -1,6 +1,6 @@
 ﻿using NServiceBus;
-using Unilib.CommunicationServer.Common;
-using Unilib.CommunicationServer.DataEntities;
+using Unilib.Common.DataEntities;
+using Unilib.Common.Interfaces;
 using Unilib.Messages;
 
 namespace Unilib.CommunicationServer.Handlers

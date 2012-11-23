@@ -66,15 +66,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataEntities\AuthorRecordEntity.cs" />
-    <Compile Include="DataEntities\RecordEntity.cs" />
+    <Compile Include="Handlers\AddRecordClassificationCommandHandler.cs" />
     <Compile Include="Handlers\CreateAuthorCommandHandler.cs" />
-    <Compile Include="DataEntities\AuthorEntity.cs" />
-    <Compile Include="Common\IEntity.cs" />
-    <Compile Include="Common\IRepository.cs" />
+    <Compile Include="Handlers\CreateAuthorRecordRelationCommandHandler.cs" />
     <Compile Include="Handlers\CreateRecordCommandHandler.cs" />
-    <Compile Include="Mappings\AuthorMap.cs" />
-    <Compile Include="Mappings\RecordMap.cs" />
     <Compile Include="MessageEndpoint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -84,6 +79,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Unilib.Common\Unilib.Common.csproj">
+      <Project>{CE7E3611-4532-4849-B6FD-8A54E0E56E1E}</Project>
+      <Name>Unilib.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Unilib.Messages\Unilib.Messages.csproj">
       <Project>{208EDCDE-785E-4A40-81F3-6F0E841DF60E}</Project>
       <Name>Unilib.Messages</Name>

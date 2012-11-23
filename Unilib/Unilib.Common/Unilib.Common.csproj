@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{208EDCDE-785E-4A40-81F3-6F0E841DF60E}</ProjectGuid>
+    <ProjectGuid>{CE7E3611-4532-4849-B6FD-8A54E0E56E1E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Unilib.Messages</RootNamespace>
-    <AssemblyName>Unilib.Messages</AssemblyName>
+    <RootNamespace>Unilib.Common</RootNamespace>
+    <AssemblyName>Unilib.Common</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,8 +31,26 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\..\Binaries\containers\autofac\v2.6.1\Autofac-2.6.1.841-NET40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\..\Binaries\FluentHibernate\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\..\Binaries\FluentHibernate\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\..\Binaries\FluentHibernate\NHibernate.dll</HintPath>
+    </Reference>
     <Reference Include="NServiceBus">
       <HintPath>..\..\Binaries\NServiceBus.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus.Core">
+      <HintPath>..\..\Binaries\NServiceBus.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus.ObjectBuilder.Autofac">
+      <HintPath>..\..\Binaries\containers\autofac\NServiceBus.ObjectBuilder.Autofac.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -43,12 +61,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddRecordClassificationCommand.cs" />
-    <Compile Include="CreateAuthorCommand.cs" />
-    <Compile Include="CreateRecordCommand.cs" />
-    <Compile Include="CreateAuthorRecordRelationCommand.cs" />
+    <Compile Include="Extensions\ConfigureExtensions.cs" />
+    <Compile Include="DataEntities\AuthorEntity.cs" />
+    <Compile Include="DataEntities\AuthorRecordEntity.cs" />
+    <Compile Include="DataEntities\RecordClassificationEntity.cs" />
+    <Compile Include="DataEntities\RecordEntity.cs" />
+    <Compile Include="DataEntities\ThemeClassificationEntity.cs" />
+    <Compile Include="Interfaces\IEntity.cs" />
+    <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="Mappings\AuthorMap.cs" />
+    <Compile Include="Mappings\AuthorRecordMap.cs" />
+    <Compile Include="Mappings\RecordClassificationMap.cs" />
+    <Compile Include="Mappings\RecordMap.cs" />
+    <Compile Include="Mappings\ThemeClassificationMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

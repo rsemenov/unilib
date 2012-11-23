@@ -1,7 +1,7 @@
 ﻿using FluentNHibernate.Mapping;
-using Unilib.CommunicationServer.DataEntities;
+using Unilib.Common.DataEntities;
 
-namespace Unilib.CommunicationServer.Mappings
+namespace Unilib.Common.Mappings
 {
     public class RecordMap : ClassMap<RecordEntity>
     {
@@ -18,15 +18,6 @@ namespace Unilib.CommunicationServer.Mappings
             Map(x => x.SortTitle).Not.Nullable();
             Map(x => x.TitleDescription).Nullable();
             Table("Records");
-        }
-    }
-
-    public class ThemeClassificationMap : ClassMap<ThemeClassificationEntity>
-    {
-        public ThemeClassificationMap()
-        {
-            Id(x => x.Id).Column("Id").Unique();
-            //TODO
         }
     }
 }

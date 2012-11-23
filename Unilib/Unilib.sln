@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unilib.Messages", "Unilib.M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unilib.Frontend", "Unilib.Frontend\Unilib.Frontend.csproj", "{6753E767-31F9-4BB3-B62D-CFD96B3D4B23}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unilib.Common", "Unilib.Common\Unilib.Common.csproj", "{CE7E3611-4532-4849-B6FD-8A54E0E56E1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{6753E767-31F9-4BB3-B62D-CFD96B3D4B23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6753E767-31F9-4BB3-B62D-CFD96B3D4B23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6753E767-31F9-4BB3-B62D-CFD96B3D4B23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE7E3611-4532-4849-B6FD-8A54E0E56E1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE7E3611-4532-4849-B6FD-8A54E0E56E1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE7E3611-4532-4849-B6FD-8A54E0E56E1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE7E3611-4532-4849-B6FD-8A54E0E56E1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

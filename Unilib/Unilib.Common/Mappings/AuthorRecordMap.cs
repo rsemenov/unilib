@@ -1,7 +1,7 @@
 using FluentNHibernate.Mapping;
-using Unilib.CommunicationServer.DataEntities;
+using Unilib.Common.DataEntities;
 
-namespace Unilib.CommunicationServer.Mappings
+namespace Unilib.Common.Mappings
 {
     public class AuthorRecordMap : ClassMap<AuthorRecordEntity>
     {
