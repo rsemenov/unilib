@@ -9,6 +9,7 @@ using NHibernate;
 using NHibernate.Tool.hbm2ddl;
 using NServiceBus;
 using Unilib.Common.Interfaces;
+using Unilib.Common.DataEntities;
 
 namespace Unilib.Common.Extensions
 {
@@ -33,4 +34,13 @@ namespace Unilib.Common.Extensions
             return configuration.AutofacBuilder(container);
         }
     }
+
+    public static class ThemeClassificationRepositoryExtensions
+    {
+        public static ThemeClassificationEntity GetThemeClassificationEntityByTitle(IRepository<ThemeClassificationEntity> repository, string title)
+        {
+            return repository.GetAllItems<ThemeClassificationEntity>().FirstOrDefault(e => e.Title == title);
+        }
+    }
+
 }

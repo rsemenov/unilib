@@ -1,4 +1,5 @@
 ﻿using NHibernate;
+using System.Collections.Generic;
 
 namespace Unilib.Common.Interfaces
 {
@@ -8,6 +9,7 @@ namespace Unilib.Common.Interfaces
 
         void Add(T entity);
         void Update(T entity);
+        IList<T> GetAllItems<T>();
     }
 
     public class Repository<T> : IRepository<T> where T:IEntity
@@ -40,6 +42,17 @@ namespace Unilib.Common.Interfaces
                 }
             }
 
+        }
+
+        public IList<T> GetAllItems<T>()
+        {
+            using (var session = SessionFactory.OpenSession())
+            {
+                using (var transaction = session.BeginTransaction())
+                {
+                    return session.CreateCriteria(typeof (T)).List<T>();
+                }
+            }
         }
 
         #endregion
