@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddRecordClassificationCommand.cs" />
+    <Compile Include="AddRecordContentCommand.cs" />
     <Compile Include="CreateAuthorCommand.cs" />
     <Compile Include="CreateRecordCommand.cs" />
     <Compile Include="CreateAuthorRecordRelationCommand.cs" />

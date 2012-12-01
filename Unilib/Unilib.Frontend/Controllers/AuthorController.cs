@@ -34,16 +34,8 @@ namespace Unilib.Frontend.Controllers
                                   SufixPart = model.SufixPart
                               };
 
-            /*Bus.Send(command).Register<ErrorCode?>(status=>
-                                                       {
-                                                           if(status!=null)
-                                                           {
-                                                               
-                                                           }
-                                                       });
-            */
             Bus.Send(command);
-            return View();
+            return RedirectToAction("CreateRecord", "Record");
         }
       
     }

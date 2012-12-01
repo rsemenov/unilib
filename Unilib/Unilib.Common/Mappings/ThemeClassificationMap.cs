@@ -11,7 +11,6 @@ namespace Unilib.Common.Mappings
             Map(x => x.ParentId);
             Map(x => x.Title);
             Map(x => x.IsLeaf);
-            Map(x => x.Title);
             Map(x => x.Description);
             Table("ThemeClassification");
         }

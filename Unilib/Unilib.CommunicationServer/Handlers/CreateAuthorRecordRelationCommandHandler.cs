@@ -5,6 +5,7 @@ using Unilib.Messages;
 
 namespace Unilib.CommunicationServer.Handlers
 {
+  
     public class CreateAuthorRecordRelationCommandHandler : IHandleMessages<CreateAuthorRecordRelationCommand>
     {
         public IRepository<AuthorRecordEntity> RecordsRepository { get; set; }
