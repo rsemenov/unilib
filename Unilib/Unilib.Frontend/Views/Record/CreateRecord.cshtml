@@ -15,11 +15,75 @@
         <legend>RecordModel</legend>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.RecordId)
+            @Html.LabelFor(model => model.SortTitle)
         </div>
         <div class="editor-field">
-            @Html.EditorFor(model => model.RecordId)
-            @Html.ValidationMessageFor(model => model.RecordId)
+            @Html.EditorFor(model => model.SortTitle)
+            @Html.ValidationMessageFor(model => model.SortTitle)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FullTitle)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.FullTitle)
+            @Html.ValidationMessageFor(model => model.FullTitle)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.OtherTitle)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.OtherTitle)
+            @Html.ValidationMessageFor(model => model.OtherTitle)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TitleDescription)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.TitleDescription)
+            @Html.ValidationMessageFor(model => model.TitleDescription)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Responsibility)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Responsibility)
+            @Html.ValidationMessageFor(model => model.Responsibility)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ChapterName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ChapterName)
+            @Html.ValidationMessageFor(model => model.ChapterName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Publication)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Publication)
+            @Html.ValidationMessageFor(model => model.Publication)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PublicationInfo)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PublicationInfo)
+            @Html.ValidationMessageFor(model => model.PublicationInfo)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PublicationYear)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PublicationYear)
+            @Html.ValidationMessageFor(model => model.PublicationYear)
         </div>
 
         <p>
