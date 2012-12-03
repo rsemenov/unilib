@@ -13,6 +13,6 @@ namespace Unilib.Messages
         public string NationalNumber { get; set; }
         public string OtherIdentifier { get; set; }
         public string DocumentNumber { get; set; }
-        public string ThemeClassificationTitle { get; set; }
+        public Guid ThemeClassificationId { get; set; }
     }
 }

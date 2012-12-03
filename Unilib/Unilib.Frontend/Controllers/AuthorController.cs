@@ -34,8 +34,21 @@ namespace Unilib.Frontend.Controllers
                                   SufixPart = model.SufixPart
                               };
 
-            Bus.Send(command);
+            //Bus.Send(command);
             return RedirectToAction("CreateRecord", "Record");
+        }
+
+        [HttpGet]
+        public ActionResult Find()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Find(AuthorModel model)
+        {
+            TempData["aaa"] = 1;
+            return RedirectToAction("Create");
         }
       
     }

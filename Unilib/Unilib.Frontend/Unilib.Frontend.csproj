@@ -80,6 +80,8 @@
     <Compile Include="Injection\NServiceBusDependencyResolverAdapter.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\AuthorModel.cs" />
+    <Compile Include="Models\FindAuthorModel.cs" />
+    <Compile Include="Models\RecordClassificationModel.cs" />
     <Compile Include="Models\RecordModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -168,7 +170,13 @@
     <Content Include="Views\Author\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Views\Author\Find.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Views\Record\CreateRecord.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Record\ClassifyRecord.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
