@@ -10,13 +10,21 @@ namespace Unilib.Frontend.Models
     public class AuthorModel
     {
         public Guid AuthorId { get; set; }   
-        [DisplayName("Authors Name")]
+        
+        [DisplayName("Ім'я автора")]
+        [Required(ErrorMessage = "Введіть ім'я автора")]
         public string Name { get; set; }
-        [DisplayName("Full name")]
+
+        [DisplayName("Повне ім'я")]
+        [Required(ErrorMessage = "Введіть повне ім'я")]
         public string FullName { get; set; }
+        
         [DisplayName("First part")]
+        [Required(ErrorMessage = "Введіть First part")]
         public string FirstPart { get; set; }
+        
         [DisplayName("Sufix part")]
+        [Required(ErrorMessage = "Sufix part")]
         public string SufixPart { get; set; }
 
         public string OtherNames { get; set; }
