@@ -34,7 +34,7 @@ namespace Unilib.Frontend.Controllers
                                   SufixPart = model.SufixPart
                               };
 
-            //Bus.Send(command);
+            Bus.Send(command);
             return RedirectToAction("CreateRecord", "Record");
         }
 
