@@ -2,17 +2,20 @@
 using Unilib.Common.DataEntities;
 using Unilib.Common.Interfaces;
 using Unilib.Messages;
+using log4net;
 
 namespace Unilib.CommunicationServer.Handlers
 {
     public class CreateAuthorCommandHandler : IHandleMessages<CreateAuthorCommand>
     {
         public IRepository<AuthorEntity> AuthorRepository { get; set; }
+        public ILog Log { get; set; }
 
         #region IMessageHandler<CreateAuthorCommand> Members
 
         public void Handle(CreateAuthorCommand message)
         {
+            Log.InfoFormat("CreateAuthorCommand handled with AuthorId={0}", message.AuthorId);
             var entity = new AuthorEntity()
             {
                 AuthorId = message.AuthorId,
@@ -24,6 +27,8 @@ namespace Unilib.CommunicationServer.Handlers
                 SufixPart = message.SufixPart
             };
             AuthorRepository.Add(entity);
+            Log.InfoFormat("Author entity with AuthorId={0} saved successfully", message.AuthorId);
+
         }
 
         #endregion

@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using NServiceBus;
 using Unilib.Frontend.Injection;
+using log4net;
 
 namespace Unilib.Frontend
 {
@@ -38,17 +39,20 @@ namespace Unilib.Frontend
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
 
+            SetLoggingLibrary.Log4Net(log4net.Config.XmlConfigurator.Configure);
+
             // NServiceBus configuration
             Configure.WithWeb()
                 .DefaultBuilder()
                 .ForMvc()
+                .RunCustomAction(() => Configure.Instance.Configurer.ConfigureComponent(() => LogManager.GetLogger("Loger"), DependencyLifecycle.SingleInstance))
                 .JsonSerializer()
                 .Log4Net()
                 .MsmqTransport()
-                    .IsTransactional(false)
-                    .PurgeOnStartup(true)
+                .IsTransactional(false)
+                .PurgeOnStartup(true)
                 .UnicastBus()
-                    .ImpersonateSender(false)
+                .ImpersonateSender(false)
                 .CreateBus()
                 .Start(() => Configure.Instance.ForInstallationOn<NServiceBus.Installation.Environments.Windows>().Install());
         }

@@ -2,6 +2,7 @@
 using NHibernate.Tool.hbm2ddl;
 using NServiceBus;
 using Unilib.Common.Extensions;
+using log4net;
 
 namespace Unilib.CommunicationServer
 {
@@ -12,8 +13,11 @@ namespace Unilib.CommunicationServer
         /// </summary>
         public void Init()
         {
+            SetLoggingLibrary.Log4Net(log4net.Config.XmlConfigurator.Configure);
+            
             Configure.With()
                 .ForUnilib()
+                .RunCustomAction(() => Configure.Instance.Configurer.ConfigureComponent(() => LogManager.GetLogger("Loger"), DependencyLifecycle.SingleInstance))
                 .JsonSerializer();
         }
         

@@ -37,6 +37,10 @@
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll</HintPath>
     </Reference>
+    <Reference Include="log4net, Version=1.2.1.40796, Culture=neutral, PublicKeyToken=aaa0f432407c68df">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Binaries\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="NServiceBus">
       <HintPath>..\..\Binaries\NServiceBus.dll</HintPath>

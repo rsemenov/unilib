@@ -7,12 +7,14 @@ using System.Web.Mvc;
 using NServiceBus;
 using Unilib.Frontend.Models;
 using Unilib.Messages;
+using log4net;
 
 namespace Unilib.Frontend.Controllers
 {
     public class RecordController : Controller
     {
         public IBus Bus { get; set; }
+        public ILog Log { get; set; }
 
         //
         // GET: /RecordModel/
@@ -37,20 +39,21 @@ namespace Unilib.Frontend.Controllers
         [HttpPost]
         public ActionResult CreateRecord(RecordModel model)
         {
-            //var command = new CreateRecordCommand
-            //            {
-            //                Id = Guid.NewGuid()
-            //                SortTitle = model.SortTitle,
-            //                FullTitle = model.FullTitle,
-            //                OtherTitle = model.OtherTitle,
-            //                TitleDescription = model.TitleDescription,
-            //                Responsibility = model.Responsibility,
-            //                ChapterName = model.ChapterName,
-            //                Publication = model.Publication,
-            //                PublicationInfo = model.PublicationInfo,
-            //                PublicationYear = model.PublicationYear
-            //            };
-            //Bus.Send(command);
+            var command = new CreateRecordCommand
+                        {
+                            Id = Guid.NewGuid(),
+                            SortTitle = model.SortTitle,
+                            FullTitle = model.FullTitle,
+                            OtherTitle = model.OtherTitle,
+                            TitleDescription = model.TitleDescription,
+                            Responsibility = model.Responsibility,
+                            ChapterName = model.ChapterName,
+                            Publication = model.Publication,
+                            PublicationInfo = model.PublicationInfo,
+                            PublicationYear = model.PublicationYear
+                        };
+            Bus.Send(command);
+            Log.InfoFormat("CreateRecordCommand send. Id={0}", command.Id);
             return RedirectToAction("ClassifyRecord");
         }
 
@@ -63,18 +66,17 @@ namespace Unilib.Frontend.Controllers
         [HttpPost]
         public ActionResult ClassifyRecord(RecordClassificationModel model)
         {
-            //var command = new AddRecordClassificationCommand
-            //{
-            //    Id = 1,
-            //    RecordId = model.RecordId,
-            //    ISBN = model.ISBN,
-            //    ISSN = model.ISSN,
-            //    NationalNumber = model.NationalNumber,
-            //    OtherIdentifier = model.OtherIdentifier,
-            //    DocumentNumber = model.DocumentNumber,
-            //    ThemeClassificationId = model.RecordClassificationId
-            //};
-            //Bus.Send(command);
+            var command = new AddRecordClassificationCommand
+            {
+                //RecordId = model.RecordId,
+                ISBN = model.ISBN,
+                ISSN = model.ISSN,
+                NationalNumber = model.NationalNumber,
+                OtherIdentifier = model.OtherIdentifier,
+                DocumentNumber = model.DocumentNumber,
+                //ThemeClassificationId = model.RecordClassificationId
+            };
+            Bus.Send(command);
             return View();
         }
 
