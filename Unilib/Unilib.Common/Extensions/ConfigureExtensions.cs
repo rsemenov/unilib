@@ -19,7 +19,7 @@ namespace Unilib.Common.Extensions
         {
             ISessionFactory sessionFactory = Fluently.Configure()
                .Database(MsSqlConfiguration.MsSql2008
-                             .ConnectionString(@"Data Source=.\SqlExpress2008;Initial Catalog=Unilib;Integrated Security=True")
+                             .ConnectionString(@"Data Source=.\SqlExpress;Initial Catalog=Unilib;Integrated Security=True")
                              .ShowSql())
                .Mappings(m => m.FluentMappings.AddFromAssemblyOf<IEntity>())
                .ExposeConfiguration((config) => { new SchemaUpdate(config); })

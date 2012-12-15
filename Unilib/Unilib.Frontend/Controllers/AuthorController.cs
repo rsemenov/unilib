@@ -33,7 +33,7 @@ namespace Unilib.Frontend.Controllers
                                   OtherNames = model.OtherNames,
                                   SufixPart = model.SufixPart
                               };
-
+            Session["AuthorId"] = command.AuthorId;
             Bus.Send(command);
             return RedirectToAction("CreateRecord", "Record");
         }

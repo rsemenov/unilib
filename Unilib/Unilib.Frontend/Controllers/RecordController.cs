@@ -53,6 +53,12 @@ namespace Unilib.Frontend.Controllers
                             PublicationYear = model.PublicationYear
                         };
             Bus.Send(command);
+            var com = new CreateAuthorRecordRelationCommand
+            {
+                AuthorId = (Guid)Session["AuthorId"],
+                RecordId = command.Id
+            };
+            Bus.Send(com);
             Log.InfoFormat("CreateRecordCommand send. Id={0}", command.Id);
             return RedirectToAction("ClassifyRecord");
         }

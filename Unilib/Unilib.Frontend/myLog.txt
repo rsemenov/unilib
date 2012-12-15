@@ -1,0 +1,65 @@
+2012-12-15 19:26:13,136 [5] DEBUG NServiceBus.Config [(null)] <(null)> - Number of types to scan: 1555
+2012-12-15 19:26:14,131 [5] INFO  NServiceBus.Licensing.LicenseManager [(null)] <(null)> - No valid license found.
+2012-12-15 19:26:14,156 [5] DEBUG NServiceBus.Licensing.LicenseManager [(null)] <(null)> - Trial for NServiceBus v3.3 has expired.
+2012-12-15 19:26:14,156 [5] WARN  NServiceBus.Licensing.LicenseManager [(null)] <(null)> - Falling back to run in Basic1 license mode.
+2012-12-15 19:26:14,201 [5] DEBUG NServiceBus.Unicast.BackwardCompatibility.IncomingSubscriptionMessageMutator [(null)] <(null)> - Configured IncomingReturnMessageMutator
+2012-12-15 19:26:14,202 [5] DEBUG NServiceBus.Unicast.BackwardCompatibility.IncomingSubscriptionMessageMutator [(null)] <(null)> - Configured Transport Incoming Message Mutator: IncomingSubscriptionMessageMutator
+2012-12-15 19:26:14,363 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.CreateAuthorRecordRelationCommand has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-15 19:26:14,363 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.AddRecordClassificationCommand has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-15 19:26:14,363 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.AddRecordContentCommand has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-15 19:26:14,363 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.CreateAuthorCommand has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-15 19:26:14,363 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.CreateRecordCommand has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-15 19:26:14,365 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Associated 'NServiceBus.Scheduling.Messages.ScheduledTask' message with 'NServiceBus.Scheduling.ScheduledTaskMessageHandler' handler
+2012-12-15 19:26:17,951 [5] DEBUG NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Checking if queue exists: error@admin.
+2012-12-15 19:26:18,173 [5] DEBUG NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Queue exists, going to set permissions.
+2012-12-15 19:26:19,012 [5] DEBUG NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Checking if queue exists: unilib.frontend.retries@admin.
+2012-12-15 19:26:19,023 [5] DEBUG NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Queue exists, going to set permissions.
+2012-12-15 19:26:19,331 [5] DEBUG NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Checking if queue exists: unilib.frontend@admin.
+2012-12-15 19:26:19,340 [5] DEBUG NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Queue exists, going to set permissions.
+2012-12-15 19:26:19,644 [5] DEBUG NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Setting throttling to: [1] message/s per second, sleep between receiving message: [800]
+2012-12-15 19:26:19,646 [5] DEBUG NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Going to start [1] receiving thread/s for Address [unilib.frontend@admin].
+2012-12-15 19:26:19,775 [16] DEBUG NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Going to start [1] receiving thread/s for Address [unilib.frontend.retries@admin].
+2012-12-15 19:26:19,780 [16] DEBUG SatelliteLauncher [(null)] <(null)> - Starting transport unilib.frontend.retries@admin for satellite SecondLevelRetries using 1 thread(s)
+2012-12-15 19:26:33,411 [13] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.VersionMutator
+2012-12-15 19:26:33,412 [13] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.SentTimeMutator
+2012-12-15 19:26:33,412 [13] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.RelatedToMessageMutator
+2012-12-15 19:26:33,413 [13] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.EnclosedMessageTypesMutator
+2012-12-15 19:26:33,420 [13] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.BackwardCompatibility.OutgoingSubscriptionMessageMutator
+2012-12-15 19:26:33,420 [13] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Sagas.Impl.OriginatingSagaHeaderMutator
+2012-12-15 19:26:33,421 [13] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Sagas.Impl.AutoCorrelateSagaOnReplyMutator
+2012-12-15 19:26:33,421 [13] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.MessageHeaders.MessageHeaderManager
+2012-12-15 19:26:33,425 [13] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Impersonation.ImpersonationManager
+2012-12-15 19:26:33,425 [13] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Gateway.HeaderManagement.GatewayHeaderManager
+2012-12-15 19:26:33,647 [13] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Sending message Unilib.Messages.CreateAuthorCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null with ID dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\2088 to destination unilib.communicationserver@admin.
+ToString() of the message yields: Unilib.Messages.CreateAuthorCommand
+Message headers:
+NServiceBus.Version:3.3.0, NServiceBus.TimeSent:2012-12-15 17:26:33:412091 Z, NServiceBus.EnclosedMessageTypes:Unilib.Messages.CreateAuthorCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, WinIdName:, CorrId:
+2012-12-15 19:27:00,743 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.VersionMutator
+2012-12-15 19:27:00,743 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.SentTimeMutator
+2012-12-15 19:27:00,743 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.RelatedToMessageMutator
+2012-12-15 19:27:00,743 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.EnclosedMessageTypesMutator
+2012-12-15 19:27:00,743 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.BackwardCompatibility.OutgoingSubscriptionMessageMutator
+2012-12-15 19:27:00,743 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Sagas.Impl.OriginatingSagaHeaderMutator
+2012-12-15 19:27:00,743 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Sagas.Impl.AutoCorrelateSagaOnReplyMutator
+2012-12-15 19:27:00,744 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.MessageHeaders.MessageHeaderManager
+2012-12-15 19:27:00,744 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Impersonation.ImpersonationManager
+2012-12-15 19:27:00,744 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Gateway.HeaderManagement.GatewayHeaderManager
+2012-12-15 19:27:00,746 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Sending message Unilib.Messages.CreateRecordCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null with ID dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\2090 to destination unilib.communicationserver@admin.
+ToString() of the message yields: Unilib.Messages.CreateRecordCommand
+Message headers:
+NServiceBus.Version:3.3.0, NServiceBus.TimeSent:2012-12-15 17:27:00:743654 Z, NServiceBus.EnclosedMessageTypes:Unilib.Messages.CreateRecordCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, WinIdName:, CorrId:
+2012-12-15 19:27:00,748 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.VersionMutator
+2012-12-15 19:27:00,748 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.SentTimeMutator
+2012-12-15 19:27:00,748 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.RelatedToMessageMutator
+2012-12-15 19:27:00,748 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.EnclosedMessageTypesMutator
+2012-12-15 19:27:00,749 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.BackwardCompatibility.OutgoingSubscriptionMessageMutator
+2012-12-15 19:27:00,749 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Sagas.Impl.OriginatingSagaHeaderMutator
+2012-12-15 19:27:00,749 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Sagas.Impl.AutoCorrelateSagaOnReplyMutator
+2012-12-15 19:27:00,749 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.MessageHeaders.MessageHeaderManager
+2012-12-15 19:27:00,749 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Impersonation.ImpersonationManager
+2012-12-15 19:27:00,749 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Gateway.HeaderManagement.GatewayHeaderManager
+2012-12-15 19:27:00,798 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Sending message Unilib.Messages.CreateAuthorRecordRelationCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null with ID dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\2092 to destination unilib.communicationserver@admin.
+ToString() of the message yields: Unilib.Messages.CreateAuthorRecordRelationCommand
+Message headers:
+NServiceBus.Version:3.3.0, NServiceBus.TimeSent:2012-12-15 17:27:00:748655 Z, NServiceBus.EnclosedMessageTypes:Unilib.Messages.CreateAuthorRecordRelationCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, WinIdName:, CorrId:
+2012-12-15 19:27:00,798 [7] INFO  Loger [(null)] <(null)> - CreateRecordCommand send. Id=a6e77905-d2f7-4248-8538-9cad45433653
