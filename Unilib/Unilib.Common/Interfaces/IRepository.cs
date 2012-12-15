@@ -50,7 +50,9 @@ namespace Unilib.Common.Interfaces
             {
                 using (var transaction = session.BeginTransaction())
                 {
-                    return session.CreateCriteria(typeof (T)).List<T>();
+                    var res = session.CreateCriteria(typeof (T)).List<T>();
+                    transaction.Commit();
+                    return res;
                 }
             }
         }

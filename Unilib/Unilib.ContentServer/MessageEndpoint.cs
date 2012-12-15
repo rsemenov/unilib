@@ -16,7 +16,7 @@ namespace Unilib.ContentServer
             Configure.With()
                 .ForUnilib()
                 .RunCustomAction(() => Configure.Instance.Configurer.ConfigureComponent(() => LogManager.GetLogger("Loger"), DependencyLifecycle.SingleInstance))
-                .JsonSerializer();
+                .XmlSerializer();
         }
         
     }
