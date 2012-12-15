@@ -40,19 +40,27 @@ namespace Unilib.Frontend
             RegisterRoutes(RouteTable.Routes);
 
             SetLoggingLibrary.Log4Net(log4net.Config.XmlConfigurator.Configure);
-
+           /* Bus = Configure.With()
+.Log4Net()
+.DefaultBuilder()
+.RijndaelEncryptionService()
+.XmlSerializer("http://acme.com")
+.InMemoryFaultManagement()
+.MsmqTransport()
+.UnicastBus()
+.CreateBus()
+.Start(() => Configure.Instance
+.ForInstallationOn<Windows>().Install());*/
             // NServiceBus configuration
-            Configure.WithWeb()
+            Configure.With()
+                .Log4Net()
                 .DefaultBuilder()
                 .ForMvc()
                 .RunCustomAction(() => Configure.Instance.Configurer.ConfigureComponent(() => LogManager.GetLogger("Loger"), DependencyLifecycle.SingleInstance))
-                .JsonSerializer()
-                .Log4Net()
+                .XmlSerializer()
                 .MsmqTransport()
-                .IsTransactional(false)
                 .PurgeOnStartup(true)
                 .UnicastBus()
-                .ImpersonateSender(false)
                 .CreateBus()
                 .Start(() => Configure.Instance.ForInstallationOn<NServiceBus.Installation.Environments.Windows>().Install());
         }

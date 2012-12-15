@@ -128,7 +128,9 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\modernizr-1.7.js" />
     <Content Include="Scripts\modernizr-1.7.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -168,6 +170,10 @@
     <ProjectReference Include="..\Unilib.Messages\Unilib.Messages.csproj">
       <Project>{208EDCDE-785E-4A40-81F3-6F0E841DF60E}</Project>
       <Name>Unilib.Messages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unilib.Queries\Unilib.Queries.csproj">
+      <Project>{49091354-4396-459E-9AB5-511F9F8D40BD}</Project>
+      <Name>Unilib.Queries</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

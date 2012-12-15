@@ -45,10 +45,12 @@
   <ItemGroup>
     <Compile Include="AddRecordClassificationCommand.cs" />
     <Compile Include="AddRecordContentCommand.cs" />
+    <Compile Include="CommandStatus.cs" />
     <Compile Include="CreateAuthorCommand.cs" />
     <Compile Include="CreateRecordCommand.cs" />
     <Compile Include="CreateAuthorRecordRelationCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResponseMessage.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
