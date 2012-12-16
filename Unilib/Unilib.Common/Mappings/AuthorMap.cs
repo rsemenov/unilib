@@ -8,7 +8,7 @@ namespace Unilib.Common.Mappings
         public AuthorMap()
         {
             //Schema("UniLib");
-            Id(x => x.AuthorId).Column("Id").Unique();
+            Id(x => x.AuthorId).Column("Id").GeneratedBy.Assigned();
             Map(x => x.FirstPart).Not.Nullable();
             Map(x => x.FullName).Not.Nullable();
             Map(x => x.Name).Not.Nullable();

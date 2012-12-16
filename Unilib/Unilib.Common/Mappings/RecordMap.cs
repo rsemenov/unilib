@@ -7,7 +7,7 @@ namespace Unilib.Common.Mappings
     {
         public RecordMap()
         {
-            Id(x => x.Id).Column("Id");
+            Id(x => x.Id).Column("Id").GeneratedBy.Assigned();
             Map(x => x.ChapterName).Not.Nullable();
             Map(x => x.FullTitle).Not.Nullable();
             Map(x => x.OtherTitle).Nullable();

@@ -8,6 +8,7 @@ namespace Unilib.Common.Mappings
         public RecordClassificationMap()
         {
             Id(x => x.Id).Column("Id").Unique();
+            Map(x => x.RecordId);
             Map(x => x.ISBN);
             Map(x => x.ISSN);
             Map(x => x.NationalNumber);
