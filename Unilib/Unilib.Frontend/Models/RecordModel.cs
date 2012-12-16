@@ -6,11 +6,11 @@ namespace Unilib.Frontend.Models
 {
     public class RecordModel
     {
-        [DisplayName("Скорочена назва запису")]
+        [DisplayName("Скорочена назва запису*")]
         [Required(ErrorMessage = "Введіть скорочену назву запису")]
         public string SortTitle { get; set; }
         
-        [DisplayName("Повна назва запису")]
+        [DisplayName("Повна назва запису*")]
         [Required(ErrorMessage = "Введіть повну назву запису")]
         public string FullTitle { get; set; }
         
@@ -20,14 +20,14 @@ namespace Unilib.Frontend.Models
         [DisplayName("Опис назви запису")]
         public string TitleDescription { get; set; }
         
-        [DisplayName("Відповідальність")]
+        [DisplayName("Відповідальність*")]
         [Required(ErrorMessage = "Введіть дані про відповідальність")]
         public string Responsibility { get; set; }
         
         [DisplayName("Частина, розділ, назва тому, глави")]
         public string ChapterName { get; set; }
         
-        [DisplayName("Публікація")]
+        [DisplayName("Публікація*")]
         [Required(ErrorMessage = "Введіть дані про публікацію")]
         public string Publication { get; set; }
         
