@@ -8,6 +8,7 @@ using NServiceBus;
 using Unilib.Frontend.Models;
 using Unilib.Messages;
 using log4net;
+using Unilib.Queries;
 
 namespace Unilib.Frontend.Controllers
 {
@@ -63,11 +64,35 @@ namespace Unilib.Frontend.Controllers
             return RedirectToAction("ClassifyRecord");
         }
 
+        private GetClassificationMessageResponse classificationResponse;
+
         public ActionResult ClassifyRecord()
         {
-            
+            var res = Bus.Send(new GetClassificationMessage()).Register(ClassificationCallback, this);
+            WaitHandle asyncWaitHandle = res.AsyncWaitHandle;
+            asyncWaitHandle.WaitOne(50000);
+            RecordClassificationModel model = new RecordClassificationModel();
+            if (classificationResponse != null)
+            {
+                model = new RecordClassificationModel()
+                                {
+                                    Theme = classificationResponse.Tree.First().Value.Select(node =>
+                                                                                             node.Title).ToArray()
+                                };
+                return View(model);
+            }
+            model.Theme = new string[0];
             return View();
+            
         }
+
+        private void ClassificationCallback(IAsyncResult asyncResult)
+        {
+            var result = asyncResult.AsyncState as CompletionResult;
+            var controller = result.State as AuthorController;
+            classificationResponse = (GetClassificationMessageResponse)(result.Messages[0]);
+        }
+
 
         [HttpPost]
         public ActionResult ClassifyRecord(RecordClassificationModel model)

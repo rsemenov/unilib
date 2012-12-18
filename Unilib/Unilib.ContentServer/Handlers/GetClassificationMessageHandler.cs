@@ -25,7 +25,7 @@ namespace Unilib.ContentServer.Handlers
             var notLeafs = ClasificationRepository.GetAllNotLeafEntities().ToList();
             foreach (var l in leafs)
             {
-                var parent = notLeafs.FirstOrDefault(e => e.Id == l.Id);
+                var parent = notLeafs.FirstOrDefault(e => e.Id == l.ParentId);
                 if(parent!=null)
                 {
                     if (!resp.Tree.ContainsKey(parent.Title))

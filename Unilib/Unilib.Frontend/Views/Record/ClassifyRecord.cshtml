@@ -59,7 +59,7 @@
             @Html.LabelFor(model => model.Theme)
         </div>
         <div class="editor-field">
-            @Html.ListBoxFor(model => model.Theme, new MultiSelectList(model.Theme))
+            @Html.ListBoxFor(model => model.Theme, new SelectList(Model.Theme))
             @Html.ValidationMessageFor(model => model.Theme)
         </div>
         </p>
