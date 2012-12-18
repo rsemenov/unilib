@@ -10,6 +10,7 @@ namespace Unilib.Frontend.Models
         [Required(ErrorMessage = "Введіть Прізвище")]
         public string Surname { get; set; }
         [DisplayName("Ім'я")]
+        [Required(ErrorMessage = "Введіть Ім'я")]
         public string Name { get; set; }
         [DisplayName("По-батькові")]
         public string Patronymic { get; set; }

@@ -11,19 +11,19 @@ namespace Unilib.Frontend.Models
     {
         public Guid AuthorId { get; set; }   
         
-        [DisplayName("Ім'я автора")]
+        [DisplayName("Ім'я автора*")]
         [Required(ErrorMessage = "Введіть ім'я автора")]
         public string Name { get; set; }
 
-        [DisplayName("Повне ім'я")]
+        [DisplayName("Повне ім'я*")]
         [Required(ErrorMessage = "Введіть повне ім'я")]
         public string FullName { get; set; }
         
-        [DisplayName("First part")]
+        [DisplayName("First part*")]
         [Required(ErrorMessage = "Введіть First part")]
         public string FirstPart { get; set; }
         
-        [DisplayName("Sufix part")]
+        [DisplayName("Sufix part*")]
         [Required(ErrorMessage = "Sufix part")]
         public string SufixPart { get; set; }
 

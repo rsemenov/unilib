@@ -55,6 +55,16 @@
         </div>
 
         <p>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Theme)
+        </div>
+        <div class="editor-field">
+            @Html.ListBoxFor(model => model.Theme, new MultiSelectList(model.Theme))
+            @Html.ValidationMessageFor(model => model.Theme)
+        </div>
+        </p>
+
+        <p>
             <input type="submit" value="Create" />
         </p>
     </fieldset>
