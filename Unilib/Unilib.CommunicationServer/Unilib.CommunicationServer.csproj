@@ -72,6 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Handlers\AddRecordClassificationCommandHandler.cs" />
+    <Compile Include="Handlers\AddRecordContentCommandHandler.cs" />
     <Compile Include="Handlers\CreateAuthorCommandHandler.cs" />
     <Compile Include="Handlers\CreateAuthorRecordRelationCommandHandler.cs" />
     <Compile Include="Handlers\CreateRecordCommandHandler.cs" />

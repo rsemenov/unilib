@@ -26,7 +26,15 @@ namespace Unilib.Frontend.Models
         public string DocumentNumber { get; set; }
 
         [DisplayName("Призначення")]
-        public string[] Theme { get; set; }
-        public int[] SelectedThemes { get; set; }
+        public ListViewModel[] Theme { get; set; }
+
+        public int[] SelectedList { get; set; }
+        
+    }
+
+    public class ListViewModel
+    {
+        public string Title { get; set; }
+        public int Id { get; set; }
     }
 }

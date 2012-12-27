@@ -53,6 +53,7 @@ namespace Unilib.Frontend.Controllers
                             PublicationInfo = model.PublicationInfo,
                             PublicationYear = model.PublicationYear
                         };
+            Session["RecordId"] = command.Id;
             Bus.Send(command);
             var relationcommand = new CreateAuthorRecordRelationCommand
                         {
@@ -75,13 +76,14 @@ namespace Unilib.Frontend.Controllers
             if (classificationResponse != null)
             {
                 model = new RecordClassificationModel()
-                                {
-                                    Theme = classificationResponse.Tree.First().Value.Select(node =>
-                                                                                             node.Title).ToArray()
+                            {
+                                Theme = classificationResponse.Tree.First().Value.Select(node =>
+                                    new ListViewModel(){Id = node.Id,Title = node.Title}).ToArray(),
+                                SelectedList = new int[0]
                                 };
                 return View(model);
             }
-            model.Theme = new string[0];
+            model.Theme = new ListViewModel[0];
             return View();
             
         }
@@ -97,18 +99,22 @@ namespace Unilib.Frontend.Controllers
         [HttpPost]
         public ActionResult ClassifyRecord(RecordClassificationModel model)
         {
+            if (model.SelectedList.Count()==0)
+            {
+                return View(model);
+            }
             var command = new AddRecordClassificationCommand
             {
-                //RecordId = model.RecordId,
+                RecordId = (Guid)Session["RecordId"],
                 ISBN = model.ISBN,
                 ISSN = model.ISSN,
                 NationalNumber = model.NationalNumber,
                 OtherIdentifier = model.OtherIdentifier,
                 DocumentNumber = model.DocumentNumber,
-                //ThemeClassificationId = model.RecordClassificationId
+                ThemeClassificationId = model.SelectedList[0]
             };
             Bus.Send(command);
-            return View();
+            return View(model);//RedirectToAction();
         }
 
     }

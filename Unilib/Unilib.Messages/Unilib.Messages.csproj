@@ -52,6 +52,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResponseMessage.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Unilib.Common\Unilib.Common.csproj">
+      <Project>{CE7E3611-4532-4849-B6FD-8A54E0E56E1E}</Project>
+      <Name>Unilib.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
