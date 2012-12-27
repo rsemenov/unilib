@@ -3734,3 +3734,501 @@ NServiceBus.Unicast.Queuing.QueueNotFoundException: Failed to send message to ad
 ToString() of the message yields: Unilib.Messages.AddRecordClassificationCommand
 Message headers:
 NServiceBus.Version:3.3.0, NServiceBus.TimeSent:2012-12-27 21:32:10:644568 Z, NServiceBus.EnclosedMessageTypes:Unilib.Messages.AddRecordClassificationCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, WinIdName:, CorrId:
+2012-12-28 00:23:12,896 [5] DEBUG NServiceBus.Config [(null)] <(null)> - Number of types to scan: 1563
+2012-12-28 00:23:14,337 [5] INFO  NServiceBus.Licensing.LicenseManager [(null)] <(null)> - No valid license found.
+2012-12-28 00:23:14,481 [5] DEBUG NServiceBus.Licensing.LicenseManager [(null)] <(null)> - Trial for NServiceBus v3.3 has expired.
+2012-12-28 00:23:14,482 [5] WARN  NServiceBus.Licensing.LicenseManager [(null)] <(null)> - Falling back to run in Basic1 license mode.
+2012-12-28 00:23:14,523 [5] DEBUG NServiceBus.Unicast.BackwardCompatibility.IncomingSubscriptionMessageMutator [(null)] <(null)> - Configured IncomingReturnMessageMutator
+2012-12-28 00:23:14,523 [5] DEBUG NServiceBus.Unicast.BackwardCompatibility.IncomingSubscriptionMessageMutator [(null)] <(null)> - Configured Transport Incoming Message Mutator: IncomingSubscriptionMessageMutator
+2012-12-28 00:23:15,065 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.AddRecordClassificationCommand has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-28 00:23:15,065 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.CreateAuthorRecordRelationCommand has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-28 00:23:15,065 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.ResponseMessage has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-28 00:23:15,065 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.CreateAuthorCommand has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-28 00:23:15,065 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.AddRecordContentCommand has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-28 00:23:15,065 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.CreateRecordCommand has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-28 00:23:15,065 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Queries.GetClassificationMessage has been allocated to endpoint unilib.contentserver@admin.
+2012-12-28 00:23:15,065 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Queries.GetClassificationMessageResponse has been allocated to endpoint unilib.contentserver@admin.
+2012-12-28 00:23:15,066 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Queries.CheckAuthorMessageResponse has been allocated to endpoint unilib.contentserver@admin.
+2012-12-28 00:23:15,066 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Queries.CheckAuthorMessage has been allocated to endpoint unilib.contentserver@admin.
+2012-12-28 00:23:15,066 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Queries.ClasificationNode has been allocated to endpoint unilib.contentserver@admin.
+2012-12-28 00:23:15,066 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.CommandStatusEnum has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-28 00:23:15,070 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Associated 'NServiceBus.Scheduling.Messages.ScheduledTask' message with 'NServiceBus.Scheduling.ScheduledTaskMessageHandler' handler
+2012-12-28 00:23:15,292 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: NServiceBus.Scheduling.Messages.ScheduledTask, NServiceBus.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2012-12-28 00:23:15,384 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: TaskId
+2012-12-28 00:23:15,407 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,408 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: NServiceBus.Unicast.Transport.CompletionMessage, NServiceBus.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2012-12-28 00:23:15,408 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: ErrorCode
+2012-12-28 00:23:15,409 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,409 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: NServiceBus.Saga.ISagaMessage, NServiceBus, Version=3.3.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2012-12-28 00:23:15,410 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: SagaId
+2012-12-28 00:23:15,411 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,411 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: NServiceBus.Saga.ITimeoutState, NServiceBus, Version=3.3.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2012-12-28 00:23:15,411 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: NServiceBus.Saga.TimeoutMessage, NServiceBus, Version=3.3.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2012-12-28 00:23:15,411 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Expires
+2012-12-28 00:23:15,412 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,413 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: SagaId
+2012-12-28 00:23:15,413 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,413 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: State
+2012-12-28 00:23:15,414 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,414 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: ClearTimeout
+2012-12-28 00:23:15,415 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,415 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Messages.AddRecordClassificationCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:23:15,416 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Id
+2012-12-28 00:23:15,416 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,416 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: RecordId
+2012-12-28 00:23:15,417 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,417 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: ISBN
+2012-12-28 00:23:15,418 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,418 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: ISSN
+2012-12-28 00:23:15,420 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,420 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: NationalNumber
+2012-12-28 00:23:15,421 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,421 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: OtherIdentifier
+2012-12-28 00:23:15,422 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,422 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: DocumentNumber
+2012-12-28 00:23:15,423 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,423 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: ThemeClassificationId
+2012-12-28 00:23:15,424 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,424 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Messages.CreateAuthorRecordRelationCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:23:15,424 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: AuthorId
+2012-12-28 00:23:15,425 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,425 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: RecordId
+2012-12-28 00:23:15,426 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,426 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Messages.ResponseMessage, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:23:15,426 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: SomeField
+2012-12-28 00:23:15,427 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,427 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Messages.CreateAuthorCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:23:15,427 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: AuthorId
+2012-12-28 00:23:15,428 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,428 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Name
+2012-12-28 00:23:15,429 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,429 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: FullName
+2012-12-28 00:23:15,430 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,430 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: FirstPart
+2012-12-28 00:23:15,431 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,431 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: SufixPart
+2012-12-28 00:23:15,432 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,432 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: OtherNames
+2012-12-28 00:23:15,432 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,432 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: NameAddition
+2012-12-28 00:23:15,433 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,433 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Messages.AddRecordContentCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:23:15,433 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: RecordId
+2012-12-28 00:23:15,433 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,433 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: DataType
+2012-12-28 00:23:15,434 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,434 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: ContentFile
+2012-12-28 00:23:15,434 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,434 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,434 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,434 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,434 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: DescriptionFile
+2012-12-28 00:23:15,435 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,435 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,435 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,435 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,435 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Messages.CreateRecordCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:23:15,435 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Id
+2012-12-28 00:23:15,436 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,436 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: SortTitle
+2012-12-28 00:23:15,436 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,436 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: FullTitle
+2012-12-28 00:23:15,437 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,437 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: OtherTitle
+2012-12-28 00:23:15,437 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,437 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: TitleDescription
+2012-12-28 00:23:15,438 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,438 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Responsibility
+2012-12-28 00:23:15,438 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,438 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: ChapterName
+2012-12-28 00:23:15,438 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,439 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Publication
+2012-12-28 00:23:15,439 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,439 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: PublicationInfo
+2012-12-28 00:23:15,439 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,439 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: PublicationYear
+2012-12-28 00:23:15,440 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,440 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.GetClassificationMessage, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:23:15,440 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.GetClassificationMessageResponse, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:23:15,440 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Tree
+2012-12-28 00:23:15,441 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Collections.Generic.Dictionary`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Collections.Generic.List`1[[Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,441 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,441 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Collections.Generic.List`1[[Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,441 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:23:15,441 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Id
+2012-12-28 00:23:15,441 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,441 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Title
+2012-12-28 00:23:15,442 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,442 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Description
+2012-12-28 00:23:15,442 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,442 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:23:15,442 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:23:15,442 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:23:15,443 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Collections.Generic.List`1[[Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,443 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Key
+2012-12-28 00:23:15,458 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,458 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Value
+2012-12-28 00:23:15,459 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Collections.Generic.List`1[[Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,459 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:23:15,459 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:23:15,459 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:23:15,459 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:23:15,459 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Collections.Generic.List`1[[Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,459 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.CheckAuthorMessageResponse, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:23:15,459 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: AuthorId
+2012-12-28 00:23:15,460 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Nullable`1[[System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,460 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,460 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.CheckAuthorMessage, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:23:15,460 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Name
+2012-12-28 00:23:15,460 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,460 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Surname
+2012-12-28 00:23:15,461 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,461 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: MiddleName
+2012-12-28 00:23:15,461 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,461 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: NServiceBus.EncryptedValue, NServiceBus, Version=3.3.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2012-12-28 00:23:15,461 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: EncryptedBase64Value
+2012-12-28 00:23:15,462 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:15,462 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Base64Iv
+2012-12-28 00:23:15,462 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:23:19,952 [5] DEBUG NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Checking if queue exists: error@admin.
+2012-12-28 00:23:20,343 [5] DEBUG NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Queue exists, going to set permissions.
+2012-12-28 00:23:21,269 [5] DEBUG NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Checking if queue exists: unilib.frontend.retries@admin.
+2012-12-28 00:23:21,280 [5] DEBUG NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Queue exists, going to set permissions.
+2012-12-28 00:23:21,482 [5] DEBUG NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Checking if queue exists: unilib.frontend@admin.
+2012-12-28 00:23:21,491 [5] DEBUG NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Queue exists, going to set permissions.
+2012-12-28 00:23:21,730 [5] DEBUG NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Setting throttling to: [1] message/s per second, sleep between receiving message: [800]
+2012-12-28 00:23:21,744 [5] DEBUG NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Going to start [1] receiving thread/s for Address [unilib.frontend@admin].
+2012-12-28 00:23:21,872 [16] DEBUG NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Going to start [1] receiving thread/s for Address [unilib.frontend.retries@admin].
+2012-12-28 00:23:21,874 [16] DEBUG SatelliteLauncher [(null)] <(null)> - Starting transport unilib.frontend.retries@admin for satellite SecondLevelRetries using 1 thread(s)
+2012-12-28 00:24:59,336 [7] DEBUG NServiceBus.Config [(null)] <(null)> - Number of types to scan: 1563
+2012-12-28 00:24:59,613 [7] INFO  NServiceBus.Licensing.LicenseManager [(null)] <(null)> - No valid license found.
+2012-12-28 00:24:59,631 [7] DEBUG NServiceBus.Licensing.LicenseManager [(null)] <(null)> - Trial for NServiceBus v3.3 has expired.
+2012-12-28 00:24:59,631 [7] WARN  NServiceBus.Licensing.LicenseManager [(null)] <(null)> - Falling back to run in Basic1 license mode.
+2012-12-28 00:24:59,642 [7] DEBUG NServiceBus.Unicast.BackwardCompatibility.IncomingSubscriptionMessageMutator [(null)] <(null)> - Configured IncomingReturnMessageMutator
+2012-12-28 00:24:59,643 [7] DEBUG NServiceBus.Unicast.BackwardCompatibility.IncomingSubscriptionMessageMutator [(null)] <(null)> - Configured Transport Incoming Message Mutator: IncomingSubscriptionMessageMutator
+2012-12-28 00:24:59,717 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.AddRecordClassificationCommand has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-28 00:24:59,717 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.CreateAuthorRecordRelationCommand has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-28 00:24:59,717 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.ResponseMessage has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-28 00:24:59,717 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.CreateAuthorCommand has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-28 00:24:59,717 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.AddRecordContentCommand has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-28 00:24:59,717 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.CreateRecordCommand has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-28 00:24:59,717 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Queries.GetClassificationMessage has been allocated to endpoint unilib.contentserver@admin.
+2012-12-28 00:24:59,717 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Queries.GetClassificationMessageResponse has been allocated to endpoint unilib.contentserver@admin.
+2012-12-28 00:24:59,717 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Queries.CheckAuthorMessageResponse has been allocated to endpoint unilib.contentserver@admin.
+2012-12-28 00:24:59,717 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Queries.CheckAuthorMessage has been allocated to endpoint unilib.contentserver@admin.
+2012-12-28 00:24:59,717 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Queries.ClasificationNode has been allocated to endpoint unilib.contentserver@admin.
+2012-12-28 00:24:59,717 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.CommandStatusEnum has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-28 00:24:59,719 [7] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Associated 'NServiceBus.Scheduling.Messages.ScheduledTask' message with 'NServiceBus.Scheduling.ScheduledTaskMessageHandler' handler
+2012-12-28 00:24:59,753 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: NServiceBus.Scheduling.Messages.ScheduledTask, NServiceBus.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2012-12-28 00:24:59,754 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: TaskId
+2012-12-28 00:24:59,762 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,762 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: NServiceBus.Unicast.Transport.CompletionMessage, NServiceBus.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2012-12-28 00:24:59,762 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: ErrorCode
+2012-12-28 00:24:59,763 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,763 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: NServiceBus.Saga.ISagaMessage, NServiceBus, Version=3.3.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2012-12-28 00:24:59,763 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: SagaId
+2012-12-28 00:24:59,763 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,763 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: NServiceBus.Saga.ITimeoutState, NServiceBus, Version=3.3.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2012-12-28 00:24:59,763 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: NServiceBus.Saga.TimeoutMessage, NServiceBus, Version=3.3.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2012-12-28 00:24:59,763 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Expires
+2012-12-28 00:24:59,764 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,764 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: SagaId
+2012-12-28 00:24:59,764 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,764 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: State
+2012-12-28 00:24:59,765 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,765 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: ClearTimeout
+2012-12-28 00:24:59,765 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,765 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Messages.AddRecordClassificationCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:24:59,765 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Id
+2012-12-28 00:24:59,766 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,766 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: RecordId
+2012-12-28 00:24:59,766 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,766 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: ISBN
+2012-12-28 00:24:59,766 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,767 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: ISSN
+2012-12-28 00:24:59,767 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,767 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: NationalNumber
+2012-12-28 00:24:59,767 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,767 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: OtherIdentifier
+2012-12-28 00:24:59,768 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,768 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: DocumentNumber
+2012-12-28 00:24:59,768 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,768 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: ThemeClassificationId
+2012-12-28 00:24:59,769 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,769 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Messages.CreateAuthorRecordRelationCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:24:59,769 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: AuthorId
+2012-12-28 00:24:59,769 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,769 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: RecordId
+2012-12-28 00:24:59,770 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,770 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Messages.ResponseMessage, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:24:59,770 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: SomeField
+2012-12-28 00:24:59,770 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,770 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Messages.CreateAuthorCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:24:59,770 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: AuthorId
+2012-12-28 00:24:59,771 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,771 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Name
+2012-12-28 00:24:59,771 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,771 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: FullName
+2012-12-28 00:24:59,772 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,772 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: FirstPart
+2012-12-28 00:24:59,772 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,772 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: SufixPart
+2012-12-28 00:24:59,773 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,773 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: OtherNames
+2012-12-28 00:24:59,773 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,773 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: NameAddition
+2012-12-28 00:24:59,774 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,774 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Messages.AddRecordContentCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:24:59,774 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: RecordId
+2012-12-28 00:24:59,774 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,774 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: DataType
+2012-12-28 00:24:59,775 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,775 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: ContentFile
+2012-12-28 00:24:59,775 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,775 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,775 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,775 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,775 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: DescriptionFile
+2012-12-28 00:24:59,776 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,776 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,776 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,776 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,776 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Messages.CreateRecordCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:24:59,776 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Id
+2012-12-28 00:24:59,776 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,776 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: SortTitle
+2012-12-28 00:24:59,777 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,777 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: FullTitle
+2012-12-28 00:24:59,782 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,782 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: OtherTitle
+2012-12-28 00:24:59,783 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,783 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: TitleDescription
+2012-12-28 00:24:59,783 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,783 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Responsibility
+2012-12-28 00:24:59,784 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,784 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: ChapterName
+2012-12-28 00:24:59,784 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,784 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Publication
+2012-12-28 00:24:59,785 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,785 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: PublicationInfo
+2012-12-28 00:24:59,785 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,785 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: PublicationYear
+2012-12-28 00:24:59,786 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,786 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.GetClassificationMessage, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:24:59,786 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.GetClassificationMessageResponse, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:24:59,786 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Tree
+2012-12-28 00:24:59,786 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Collections.Generic.Dictionary`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Collections.Generic.List`1[[Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,787 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,787 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Collections.Generic.List`1[[Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,787 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:24:59,787 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Id
+2012-12-28 00:24:59,787 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,787 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Title
+2012-12-28 00:24:59,788 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,788 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Description
+2012-12-28 00:24:59,788 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,788 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:24:59,788 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:24:59,788 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:24:59,789 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Collections.Generic.List`1[[Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,789 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Key
+2012-12-28 00:24:59,789 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,789 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Value
+2012-12-28 00:24:59,790 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Collections.Generic.List`1[[Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,790 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:24:59,790 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:24:59,790 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:24:59,790 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:24:59,790 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Collections.Generic.List`1[[Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,790 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.CheckAuthorMessageResponse, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:24:59,790 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: AuthorId
+2012-12-28 00:24:59,790 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Nullable`1[[System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,790 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,790 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.CheckAuthorMessage, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:24:59,791 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Name
+2012-12-28 00:24:59,791 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,791 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Surname
+2012-12-28 00:24:59,791 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,791 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: MiddleName
+2012-12-28 00:24:59,792 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,792 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: NServiceBus.EncryptedValue, NServiceBus, Version=3.3.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2012-12-28 00:24:59,792 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: EncryptedBase64Value
+2012-12-28 00:24:59,792 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:24:59,792 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Base64Iv
+2012-12-28 00:24:59,793 [7] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:25:02,766 [7] DEBUG NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Checking if queue exists: error@admin.
+2012-12-28 00:25:02,776 [7] DEBUG NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Queue exists, going to set permissions.
+2012-12-28 00:25:03,066 [7] DEBUG NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Checking if queue exists: unilib.frontend.retries@admin.
+2012-12-28 00:25:03,075 [7] DEBUG NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Queue exists, going to set permissions.
+2012-12-28 00:25:03,400 [7] DEBUG NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Checking if queue exists: unilib.frontend@admin.
+2012-12-28 00:25:03,406 [7] DEBUG NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Queue exists, going to set permissions.
+2012-12-28 00:25:03,775 [7] DEBUG NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Setting throttling to: [1] message/s per second, sleep between receiving message: [800]
+2012-12-28 00:25:03,780 [7] DEBUG NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Going to start [1] receiving thread/s for Address [unilib.frontend@admin].
+2012-12-28 00:25:03,823 [19] DEBUG NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Going to start [1] receiving thread/s for Address [unilib.frontend.retries@admin].
+2012-12-28 00:25:03,852 [19] DEBUG SatelliteLauncher [(null)] <(null)> - Starting transport unilib.frontend.retries@admin for satellite SecondLevelRetries using 1 thread(s)
+2012-12-28 00:35:43,557 [19] DEBUG NServiceBus.Config [(null)] <(null)> - Number of types to scan: 1563
+2012-12-28 00:35:43,807 [19] INFO  NServiceBus.Licensing.LicenseManager [(null)] <(null)> - No valid license found.
+2012-12-28 00:35:43,810 [19] DEBUG NServiceBus.Licensing.LicenseManager [(null)] <(null)> - Trial for NServiceBus v3.3 has expired.
+2012-12-28 00:35:43,810 [19] WARN  NServiceBus.Licensing.LicenseManager [(null)] <(null)> - Falling back to run in Basic1 license mode.
+2012-12-28 00:35:43,819 [19] DEBUG NServiceBus.Unicast.BackwardCompatibility.IncomingSubscriptionMessageMutator [(null)] <(null)> - Configured IncomingReturnMessageMutator
+2012-12-28 00:35:43,819 [19] DEBUG NServiceBus.Unicast.BackwardCompatibility.IncomingSubscriptionMessageMutator [(null)] <(null)> - Configured Transport Incoming Message Mutator: IncomingSubscriptionMessageMutator
+2012-12-28 00:35:43,889 [19] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.AddRecordClassificationCommand has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-28 00:35:43,889 [19] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.CreateAuthorRecordRelationCommand has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-28 00:35:43,889 [19] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.ResponseMessage has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-28 00:35:43,889 [19] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.CreateAuthorCommand has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-28 00:35:43,889 [19] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.AddRecordContentCommand has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-28 00:35:43,889 [19] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.CreateRecordCommand has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-28 00:35:43,889 [19] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Queries.GetClassificationMessage has been allocated to endpoint unilib.contentserver@admin.
+2012-12-28 00:35:43,890 [19] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Queries.GetClassificationMessageResponse has been allocated to endpoint unilib.contentserver@admin.
+2012-12-28 00:35:43,890 [19] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Queries.CheckAuthorMessageResponse has been allocated to endpoint unilib.contentserver@admin.
+2012-12-28 00:35:43,890 [19] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Queries.CheckAuthorMessage has been allocated to endpoint unilib.contentserver@admin.
+2012-12-28 00:35:43,890 [19] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Queries.ClasificationNode has been allocated to endpoint unilib.contentserver@admin.
+2012-12-28 00:35:43,890 [19] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.CommandStatusEnum has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-28 00:35:43,891 [19] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Associated 'NServiceBus.Scheduling.Messages.ScheduledTask' message with 'NServiceBus.Scheduling.ScheduledTaskMessageHandler' handler
+2012-12-28 00:35:43,912 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: NServiceBus.Scheduling.Messages.ScheduledTask, NServiceBus.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2012-12-28 00:35:43,914 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: TaskId
+2012-12-28 00:35:43,921 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,921 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: NServiceBus.Unicast.Transport.CompletionMessage, NServiceBus.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2012-12-28 00:35:43,921 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: ErrorCode
+2012-12-28 00:35:43,921 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,922 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: NServiceBus.Saga.ISagaMessage, NServiceBus, Version=3.3.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2012-12-28 00:35:43,922 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: SagaId
+2012-12-28 00:35:43,922 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,922 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: NServiceBus.Saga.ITimeoutState, NServiceBus, Version=3.3.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2012-12-28 00:35:43,922 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: NServiceBus.Saga.TimeoutMessage, NServiceBus, Version=3.3.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2012-12-28 00:35:43,922 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Expires
+2012-12-28 00:35:43,923 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,923 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: SagaId
+2012-12-28 00:35:43,923 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,923 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: State
+2012-12-28 00:35:43,924 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,924 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: ClearTimeout
+2012-12-28 00:35:43,924 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,924 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Messages.AddRecordClassificationCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:35:43,924 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Id
+2012-12-28 00:35:43,925 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,925 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: RecordId
+2012-12-28 00:35:43,925 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,925 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: ISBN
+2012-12-28 00:35:43,925 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,925 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: ISSN
+2012-12-28 00:35:43,926 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,926 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: NationalNumber
+2012-12-28 00:35:43,926 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,926 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: OtherIdentifier
+2012-12-28 00:35:43,927 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,927 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: DocumentNumber
+2012-12-28 00:35:43,927 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,927 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: ThemeClassificationId
+2012-12-28 00:35:43,928 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,928 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Messages.CreateAuthorRecordRelationCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:35:43,928 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: AuthorId
+2012-12-28 00:35:43,928 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,928 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: RecordId
+2012-12-28 00:35:43,929 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,929 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Messages.ResponseMessage, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:35:43,929 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: SomeField
+2012-12-28 00:35:43,929 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,929 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Messages.CreateAuthorCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:35:43,930 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: AuthorId
+2012-12-28 00:35:43,930 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,930 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Name
+2012-12-28 00:35:43,931 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,931 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: FullName
+2012-12-28 00:35:43,931 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,931 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: FirstPart
+2012-12-28 00:35:43,931 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,932 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: SufixPart
+2012-12-28 00:35:43,932 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,932 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: OtherNames
+2012-12-28 00:35:43,932 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,932 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: NameAddition
+2012-12-28 00:35:43,933 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,933 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Messages.AddRecordContentCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:35:43,933 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: RecordId
+2012-12-28 00:35:43,933 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,933 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: DataType
+2012-12-28 00:35:43,934 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,934 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: ContentFile
+2012-12-28 00:35:43,934 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,934 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,934 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,934 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,934 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: DescriptionFile
+2012-12-28 00:35:43,935 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,935 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,935 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,935 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,935 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Messages.CreateRecordCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:35:43,935 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Id
+2012-12-28 00:35:43,935 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,935 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: SortTitle
+2012-12-28 00:35:43,936 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,936 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: FullTitle
+2012-12-28 00:35:43,936 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,936 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: OtherTitle
+2012-12-28 00:35:43,937 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,937 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: TitleDescription
+2012-12-28 00:35:43,937 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,937 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Responsibility
+2012-12-28 00:35:43,937 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,938 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: ChapterName
+2012-12-28 00:35:43,939 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,939 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Publication
+2012-12-28 00:35:43,939 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,940 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: PublicationInfo
+2012-12-28 00:35:43,940 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,940 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: PublicationYear
+2012-12-28 00:35:43,940 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,941 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.GetClassificationMessage, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:35:43,941 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.GetClassificationMessageResponse, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:35:43,941 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Tree
+2012-12-28 00:35:43,941 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Collections.Generic.Dictionary`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Collections.Generic.List`1[[Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,941 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,941 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Collections.Generic.List`1[[Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,941 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:35:43,941 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Id
+2012-12-28 00:35:43,942 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,942 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Title
+2012-12-28 00:35:43,942 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,942 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Description
+2012-12-28 00:35:43,943 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,943 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:35:43,943 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:35:43,943 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:35:43,943 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Collections.Generic.List`1[[Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,943 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Key
+2012-12-28 00:35:43,943 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,943 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Value
+2012-12-28 00:35:43,944 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Collections.Generic.List`1[[Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,944 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:35:43,944 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:35:43,944 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:35:43,944 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:35:43,944 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Collections.Generic.List`1[[Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,944 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.CheckAuthorMessageResponse, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:35:43,944 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: AuthorId
+2012-12-28 00:35:43,944 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Nullable`1[[System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,944 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,945 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.CheckAuthorMessage, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-28 00:35:43,945 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Name
+2012-12-28 00:35:43,945 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,945 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Surname
+2012-12-28 00:35:43,945 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,945 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: MiddleName
+2012-12-28 00:35:43,946 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,946 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: NServiceBus.EncryptedValue, NServiceBus, Version=3.3.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2012-12-28 00:35:43,946 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: EncryptedBase64Value
+2012-12-28 00:35:43,946 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:43,946 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Base64Iv
+2012-12-28 00:35:43,947 [19] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-28 00:35:47,905 [19] DEBUG NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Checking if queue exists: error@admin.
+2012-12-28 00:35:47,907 [19] DEBUG NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Queue exists, going to set permissions.
+2012-12-28 00:35:48,281 [19] DEBUG NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Checking if queue exists: unilib.frontend.retries@admin.
+2012-12-28 00:35:48,282 [19] DEBUG NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Queue exists, going to set permissions.
+2012-12-28 00:35:48,679 [19] DEBUG NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Checking if queue exists: unilib.frontend@admin.
+2012-12-28 00:35:48,680 [19] DEBUG NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Queue exists, going to set permissions.
+2012-12-28 00:35:48,960 [19] DEBUG NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Setting throttling to: [1] message/s per second, sleep between receiving message: [800]
+2012-12-28 00:35:48,964 [19] DEBUG NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Going to start [1] receiving thread/s for Address [unilib.frontend@admin].
+2012-12-28 00:35:49,028 [24] DEBUG NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Going to start [1] receiving thread/s for Address [unilib.frontend.retries@admin].
+2012-12-28 00:35:49,059 [24] DEBUG SatelliteLauncher [(null)] <(null)> - Starting transport unilib.frontend.retries@admin for satellite SecondLevelRetries using 1 thread(s)

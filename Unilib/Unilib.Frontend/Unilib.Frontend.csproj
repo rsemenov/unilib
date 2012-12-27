@@ -74,6 +74,7 @@
   <ItemGroup>
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AuthorController.cs" />
+    <Compile Include="Controllers\ContentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RecordController.cs" />
     <Compile Include="Global.asax.cs">
@@ -84,6 +85,7 @@
     <Compile Include="Injection\NServiceBusDependencyResolverAdapter.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\AuthorModel.cs" />
+    <Compile Include="Models\ContentModel.cs" />
     <Compile Include="Models\FindAuthorModel.cs" />
     <Compile Include="Models\RecordClassificationModel.cs" />
     <Compile Include="Models\RecordContentModel.cs" />
