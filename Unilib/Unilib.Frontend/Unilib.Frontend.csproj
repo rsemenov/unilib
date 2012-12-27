@@ -86,6 +86,7 @@
     <Compile Include="Models\AuthorModel.cs" />
     <Compile Include="Models\FindAuthorModel.cs" />
     <Compile Include="Models\RecordClassificationModel.cs" />
+    <Compile Include="Models\RecordContentModel.cs" />
     <Compile Include="Models\RecordModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

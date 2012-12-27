@@ -3330,3 +3330,407 @@ NServiceBus.Version:3.3.0, NServiceBus.TimeSent:2012-12-16 16:44:02:323832 Z, NS
 2012-12-16 18:44:02,474 [19] INFO  Loger [(null)] <(null)> - CreateRecordCommand send. Id=3dd25694-bac0-486c-a483-cb88f8d91185
 2012-12-16 18:44:29,506 [Worker.14] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Received message with ID c9600774-9b53-4e18-860d-e775f4c32152\14343 from sender unilib.communicationserver@ruslan-pc
 2012-12-16 18:44:29,507 [Worker.14] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Finished handling message.
+2012-12-27 23:26:41,965 [5] DEBUG NServiceBus.Config [(null)] <(null)> - Number of types to scan: 1561
+2012-12-27 23:26:42,605 [5] INFO  NServiceBus.Licensing.LicenseManager [(null)] <(null)> - No valid license found.
+2012-12-27 23:26:42,650 [5] DEBUG NServiceBus.Licensing.LicenseManager [(null)] <(null)> - Trial for NServiceBus v3.3 has expired.
+2012-12-27 23:26:42,650 [5] WARN  NServiceBus.Licensing.LicenseManager [(null)] <(null)> - Falling back to run in Basic1 license mode.
+2012-12-27 23:26:42,676 [5] DEBUG NServiceBus.Unicast.BackwardCompatibility.IncomingSubscriptionMessageMutator [(null)] <(null)> - Configured IncomingReturnMessageMutator
+2012-12-27 23:26:42,676 [5] DEBUG NServiceBus.Unicast.BackwardCompatibility.IncomingSubscriptionMessageMutator [(null)] <(null)> - Configured Transport Incoming Message Mutator: IncomingSubscriptionMessageMutator
+2012-12-27 23:26:42,829 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.AddRecordClassificationCommand has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-27 23:26:42,829 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.CreateAuthorRecordRelationCommand has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-27 23:26:42,829 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.ResponseMessage has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-27 23:26:42,829 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.CreateAuthorCommand has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-27 23:26:42,829 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.AddRecordContentCommand has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-27 23:26:42,829 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.CreateRecordCommand has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-27 23:26:42,829 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Queries.GetClassificationMessage has been allocated to endpoint unilib.contentserver@admin.
+2012-12-27 23:26:42,829 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Queries.GetClassificationMessageResponse has been allocated to endpoint unilib.contentserver@admin.
+2012-12-27 23:26:42,829 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Queries.CheckAuthorMessageResponse has been allocated to endpoint unilib.contentserver@admin.
+2012-12-27 23:26:42,829 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Queries.CheckAuthorMessage has been allocated to endpoint unilib.contentserver@admin.
+2012-12-27 23:26:42,829 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Queries.ClasificationNode has been allocated to endpoint unilib.contentserver@admin.
+2012-12-27 23:26:42,829 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Message Unilib.Messages.CommandStatusEnum has been allocated to endpoint unilib.communicationserver@admin.
+2012-12-27 23:26:42,831 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Associated 'NServiceBus.Scheduling.Messages.ScheduledTask' message with 'NServiceBus.Scheduling.ScheduledTaskMessageHandler' handler
+2012-12-27 23:26:42,927 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: NServiceBus.Scheduling.Messages.ScheduledTask, NServiceBus.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2012-12-27 23:26:42,949 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: TaskId
+2012-12-27 23:26:42,987 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:42,987 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: NServiceBus.Unicast.Transport.CompletionMessage, NServiceBus.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2012-12-27 23:26:42,987 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: ErrorCode
+2012-12-27 23:26:42,988 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:42,988 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: NServiceBus.Saga.ISagaMessage, NServiceBus, Version=3.3.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2012-12-27 23:26:42,988 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: SagaId
+2012-12-27 23:26:42,989 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:42,989 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: NServiceBus.Saga.ITimeoutState, NServiceBus, Version=3.3.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2012-12-27 23:26:43,002 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: NServiceBus.Saga.TimeoutMessage, NServiceBus, Version=3.3.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2012-12-27 23:26:43,002 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Expires
+2012-12-27 23:26:43,003 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,003 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: SagaId
+2012-12-27 23:26:43,003 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,003 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: State
+2012-12-27 23:26:43,004 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,004 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: ClearTimeout
+2012-12-27 23:26:43,005 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,006 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Messages.AddRecordClassificationCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-27 23:26:43,006 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Id
+2012-12-27 23:26:43,006 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,006 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: RecordId
+2012-12-27 23:26:43,008 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,008 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: ISBN
+2012-12-27 23:26:43,009 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,009 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: ISSN
+2012-12-27 23:26:43,009 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,009 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: NationalNumber
+2012-12-27 23:26:43,010 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,010 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: OtherIdentifier
+2012-12-27 23:26:43,010 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,010 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: DocumentNumber
+2012-12-27 23:26:43,010 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,011 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: ThemeClassificationId
+2012-12-27 23:26:43,011 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,011 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Messages.CreateAuthorRecordRelationCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-27 23:26:43,011 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: AuthorId
+2012-12-27 23:26:43,011 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,012 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: RecordId
+2012-12-27 23:26:43,012 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,012 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Messages.ResponseMessage, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-27 23:26:43,012 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: SomeField
+2012-12-27 23:26:43,012 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,012 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Messages.CreateAuthorCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-27 23:26:43,013 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: AuthorId
+2012-12-27 23:26:43,013 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,013 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Name
+2012-12-27 23:26:43,013 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,013 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: FullName
+2012-12-27 23:26:43,014 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,014 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: FirstPart
+2012-12-27 23:26:43,014 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,014 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: SufixPart
+2012-12-27 23:26:43,015 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,015 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: OtherNames
+2012-12-27 23:26:43,015 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,015 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: NameAddition
+2012-12-27 23:26:43,016 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,016 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Messages.AddRecordContentCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-27 23:26:43,016 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: RecordId
+2012-12-27 23:26:43,016 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,016 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: DataType
+2012-12-27 23:26:43,016 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,017 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: ContentFile
+2012-12-27 23:26:43,017 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,017 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,017 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,017 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,017 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: DescriptionFile
+2012-12-27 23:26:43,018 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,018 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,018 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,018 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,018 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Messages.CreateRecordCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-27 23:26:43,018 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Id
+2012-12-27 23:26:43,019 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,019 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: SortTitle
+2012-12-27 23:26:43,019 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,019 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: FullTitle
+2012-12-27 23:26:43,020 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,020 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: OtherTitle
+2012-12-27 23:26:43,020 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,020 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: TitleDescription
+2012-12-27 23:26:43,021 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,021 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Responsibility
+2012-12-27 23:26:43,021 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,021 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: ChapterName
+2012-12-27 23:26:43,022 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,022 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Publication
+2012-12-27 23:26:43,022 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,022 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: PublicationInfo
+2012-12-27 23:26:43,026 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,026 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: PublicationYear
+2012-12-27 23:26:43,027 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,027 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.GetClassificationMessage, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-27 23:26:43,027 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.GetClassificationMessageResponse, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-27 23:26:43,027 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Tree
+2012-12-27 23:26:43,028 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Collections.Generic.Dictionary`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Collections.Generic.List`1[[Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,028 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,028 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Collections.Generic.List`1[[Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,028 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-27 23:26:43,028 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Id
+2012-12-27 23:26:43,029 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,029 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Title
+2012-12-27 23:26:43,029 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,029 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Description
+2012-12-27 23:26:43,030 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,030 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-27 23:26:43,030 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-27 23:26:43,030 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-27 23:26:43,030 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Collections.Generic.List`1[[Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,030 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Key
+2012-12-27 23:26:43,038 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,039 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Value
+2012-12-27 23:26:43,039 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Collections.Generic.List`1[[Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,039 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-27 23:26:43,039 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-27 23:26:43,039 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-27 23:26:43,039 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-27 23:26:43,039 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Collections.Generic.List`1[[Unilib.Queries.ClasificationNode, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,039 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.CheckAuthorMessageResponse, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-27 23:26:43,040 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: AuthorId
+2012-12-27 23:26:43,040 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Nullable`1[[System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,040 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,040 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: Unilib.Queries.CheckAuthorMessage, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2012-12-27 23:26:43,040 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Name
+2012-12-27 23:26:43,041 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,041 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Surname
+2012-12-27 23:26:43,041 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,041 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: MiddleName
+2012-12-27 23:26:43,042 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,042 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: NServiceBus.EncryptedValue, NServiceBus, Version=3.3.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2012-12-27 23:26:43,042 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: EncryptedBase64Value
+2012-12-27 23:26:43,042 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:43,042 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Handling property: Base64Iv
+2012-12-27 23:26:43,043 [5] DEBUG NServiceBus.Serializers.XML [(null)] <(null)> - Initializing type: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2012-12-27 23:26:49,388 [5] DEBUG NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Checking if queue exists: error@admin.
+2012-12-27 23:26:49,725 [5] DEBUG NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Queue exists, going to set permissions.
+2012-12-27 23:26:50,416 [5] DEBUG NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Checking if queue exists: unilib.frontend.retries@admin.
+2012-12-27 23:26:50,431 [5] DEBUG NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Queue exists, going to set permissions.
+2012-12-27 23:26:50,651 [5] DEBUG NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Checking if queue exists: unilib.frontend@admin.
+2012-12-27 23:26:50,667 [5] DEBUG NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Queue exists, going to set permissions.
+2012-12-27 23:26:51,028 [5] DEBUG NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Setting throttling to: [1] message/s per second, sleep between receiving message: [800]
+2012-12-27 23:26:51,054 [5] DEBUG NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Going to start [1] receiving thread/s for Address [unilib.frontend@admin].
+2012-12-27 23:26:51,251 [11] DEBUG NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Going to start [1] receiving thread/s for Address [unilib.frontend.retries@admin].
+2012-12-27 23:26:51,253 [11] DEBUG SatelliteLauncher [(null)] <(null)> - Starting transport unilib.frontend.retries@admin for satellite SecondLevelRetries using 1 thread(s)
+2012-12-27 23:27:12,538 [6] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.VersionMutator
+2012-12-27 23:27:12,539 [6] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.SentTimeMutator
+2012-12-27 23:27:12,539 [6] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.RelatedToMessageMutator
+2012-12-27 23:27:12,540 [6] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.EnclosedMessageTypesMutator
+2012-12-27 23:27:12,542 [6] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.BackwardCompatibility.OutgoingSubscriptionMessageMutator
+2012-12-27 23:27:12,542 [6] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Sagas.Impl.OriginatingSagaHeaderMutator
+2012-12-27 23:27:12,542 [6] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Sagas.Impl.AutoCorrelateSagaOnReplyMutator
+2012-12-27 23:27:12,543 [6] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.MessageHeaders.MessageHeaderManager
+2012-12-27 23:27:12,544 [6] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Impersonation.ImpersonationManager
+2012-12-27 23:27:12,544 [6] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Gateway.HeaderManagement.GatewayHeaderManager
+2012-12-27 23:27:13,038 [6] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Sending message Unilib.Queries.CheckAuthorMessage, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null with ID dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\6145 to destination unilib.contentserver@admin.
+ToString() of the message yields: Unilib.Queries.CheckAuthorMessage
+Message headers:
+NServiceBus.Version:3.3.0, NServiceBus.TimeSent:2012-12-27 21:27:12:539517 Z, NServiceBus.EnclosedMessageTypes:Unilib.Queries.CheckAuthorMessage, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, WinIdName:, CorrId:
+2012-12-27 23:27:30,637 [Worker.10] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Received message with ID dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\6147 from sender unilib.contentserver@admin
+2012-12-27 23:27:30,695 [Worker.10] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\6147
+System.InvalidOperationException: No handlers could be found for message type: Unilib.Queries.CheckAuthorMessageResponse
+   в NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
+   в NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
+   в System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   в NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2012-12-27 23:27:31,564 [Worker.10] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Received message with ID dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\6147 from sender unilib.contentserver@admin
+2012-12-27 23:27:31,594 [Worker.10] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\6147
+System.InvalidOperationException: No handlers could be found for message type: Unilib.Queries.CheckAuthorMessageResponse
+   в NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
+   в NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
+   в System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   в NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2012-12-27 23:27:32,405 [Worker.10] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Received message with ID dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\6147 from sender unilib.contentserver@admin
+2012-12-27 23:27:32,418 [Worker.10] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\6147
+System.InvalidOperationException: No handlers could be found for message type: Unilib.Queries.CheckAuthorMessageResponse
+   в NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
+   в NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
+   в System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   в NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2012-12-27 23:27:33,231 [Worker.10] ERROR NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Message has failed the maximum number of times allowed, ID=dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\6147.
+2012-12-27 23:27:33,302 [Worker.12] DEBUG SecondLevelRetries [(null)] <(null)> - Defer message and send it to unilib.frontend@admin using the timeout manager at unilib.frontend.timeouts@admin
+2012-12-27 23:27:33,351 [Worker.12] ERROR SatelliteLauncher [(null)] <(null)> - SecondLevelRetries could not handle message. Exception: Failed to send message to address: [unilib.frontend.timeouts@admin]
+2012-12-27 23:27:33,357 [Worker.12] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\6147
+NServiceBus.Unicast.Queuing.QueueNotFoundException: Failed to send message to address: [unilib.frontend.timeouts@admin] ---> System.Messaging.MessageQueueException: Очередь не существует, или отсутствуют достаточные полномочия для выполнения операции.
+   в System.Messaging.MessageQueue.MQCacheableInfo.get_WriteHandle()
+   в System.Messaging.MessageQueue.StaleSafeSendMessage(MQPROPS properties, ITransaction transaction)
+   в System.Messaging.MessageQueue.StaleSafeSendMessage(MQPROPS properties, IntPtr transaction)
+   в System.Messaging.MessageQueue.SendInternal(Object obj, MessageQueueTransaction internalTransaction, MessageQueueTransactionType transactionType)
+   в System.Messaging.MessageQueue.Send(Object obj, MessageQueueTransactionType transactionType)
+   в NServiceBus.Unicast.Queuing.Msmq.MsmqMessageSender.NServiceBus.Unicast.Queuing.ISendMessages.Send(TransportMessage message, Address address)
+   --- Конец трассировки внутреннего стека исключений ---
+   в NServiceBus.Unicast.Queuing.Msmq.MsmqMessageSender.NServiceBus.Unicast.Queuing.ISendMessages.Send(TransportMessage message, Address address)
+   в NServiceBus.Management.Retries.SecondLevelRetries.Defer(TimeSpan defer, TransportMessage message)
+   в NServiceBus.Management.Retries.SecondLevelRetries.Handle(TransportMessage message)
+   в NServiceBus.Satellites.SatelliteLauncher.HandleMessageReceived(Object sender, TransportMessageReceivedEventArgs e, ISatellite satellite)
+   в NServiceBus.Satellites.SatelliteLauncher.<>c__DisplayClassa.<Execute>b__8(Object o, TransportMessageReceivedEventArgs e)
+   в NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2012-12-27 23:27:33,466 [Worker.12] DEBUG SecondLevelRetries [(null)] <(null)> - Defer message and send it to unilib.frontend@admin using the timeout manager at unilib.frontend.timeouts@admin
+2012-12-27 23:27:33,482 [Worker.12] ERROR SatelliteLauncher [(null)] <(null)> - SecondLevelRetries could not handle message. Exception: Failed to send message to address: [unilib.frontend.timeouts@admin]
+2012-12-27 23:27:33,488 [Worker.12] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\6147
+NServiceBus.Unicast.Queuing.QueueNotFoundException: Failed to send message to address: [unilib.frontend.timeouts@admin] ---> System.Messaging.MessageQueueException: Очередь не существует, или отсутствуют достаточные полномочия для выполнения операции.
+   в System.Messaging.MessageQueue.MQCacheableInfo.get_WriteHandle()
+   в System.Messaging.MessageQueue.StaleSafeSendMessage(MQPROPS properties, ITransaction transaction)
+   в System.Messaging.MessageQueue.StaleSafeSendMessage(MQPROPS properties, IntPtr transaction)
+   в System.Messaging.MessageQueue.SendInternal(Object obj, MessageQueueTransaction internalTransaction, MessageQueueTransactionType transactionType)
+   в System.Messaging.MessageQueue.Send(Object obj, MessageQueueTransactionType transactionType)
+   в NServiceBus.Unicast.Queuing.Msmq.MsmqMessageSender.NServiceBus.Unicast.Queuing.ISendMessages.Send(TransportMessage message, Address address)
+   --- Конец трассировки внутреннего стека исключений ---
+   в NServiceBus.Unicast.Queuing.Msmq.MsmqMessageSender.NServiceBus.Unicast.Queuing.ISendMessages.Send(TransportMessage message, Address address)
+   в NServiceBus.Management.Retries.SecondLevelRetries.Defer(TimeSpan defer, TransportMessage message)
+   в NServiceBus.Management.Retries.SecondLevelRetries.Handle(TransportMessage message)
+   в NServiceBus.Satellites.SatelliteLauncher.HandleMessageReceived(Object sender, TransportMessageReceivedEventArgs e, ISatellite satellite)
+   в NServiceBus.Satellites.SatelliteLauncher.<>c__DisplayClassa.<Execute>b__8(Object o, TransportMessageReceivedEventArgs e)
+   в NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2012-12-27 23:27:33,505 [Worker.12] DEBUG SecondLevelRetries [(null)] <(null)> - Defer message and send it to unilib.frontend@admin using the timeout manager at unilib.frontend.timeouts@admin
+2012-12-27 23:27:33,525 [Worker.12] ERROR SatelliteLauncher [(null)] <(null)> - SecondLevelRetries could not handle message. Exception: Failed to send message to address: [unilib.frontend.timeouts@admin]
+2012-12-27 23:27:33,537 [Worker.12] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\6147
+NServiceBus.Unicast.Queuing.QueueNotFoundException: Failed to send message to address: [unilib.frontend.timeouts@admin] ---> System.Messaging.MessageQueueException: Очередь не существует, или отсутствуют достаточные полномочия для выполнения операции.
+   в System.Messaging.MessageQueue.MQCacheableInfo.get_WriteHandle()
+   в System.Messaging.MessageQueue.StaleSafeSendMessage(MQPROPS properties, ITransaction transaction)
+   в System.Messaging.MessageQueue.StaleSafeSendMessage(MQPROPS properties, IntPtr transaction)
+   в System.Messaging.MessageQueue.SendInternal(Object obj, MessageQueueTransaction internalTransaction, MessageQueueTransactionType transactionType)
+   в System.Messaging.MessageQueue.Send(Object obj, MessageQueueTransactionType transactionType)
+   в NServiceBus.Unicast.Queuing.Msmq.MsmqMessageSender.NServiceBus.Unicast.Queuing.ISendMessages.Send(TransportMessage message, Address address)
+   --- Конец трассировки внутреннего стека исключений ---
+   в NServiceBus.Unicast.Queuing.Msmq.MsmqMessageSender.NServiceBus.Unicast.Queuing.ISendMessages.Send(TransportMessage message, Address address)
+   в NServiceBus.Management.Retries.SecondLevelRetries.Defer(TimeSpan defer, TransportMessage message)
+   в NServiceBus.Management.Retries.SecondLevelRetries.Handle(TransportMessage message)
+   в NServiceBus.Satellites.SatelliteLauncher.HandleMessageReceived(Object sender, TransportMessageReceivedEventArgs e, ISatellite satellite)
+   в NServiceBus.Satellites.SatelliteLauncher.<>c__DisplayClassa.<Execute>b__8(Object o, TransportMessageReceivedEventArgs e)
+   в NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2012-12-27 23:27:33,547 [Worker.12] ERROR NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Message has failed the maximum number of times allowed, ID=dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\6147.
+2012-12-27 23:28:16,876 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.VersionMutator
+2012-12-27 23:28:16,876 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.SentTimeMutator
+2012-12-27 23:28:16,876 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.RelatedToMessageMutator
+2012-12-27 23:28:16,876 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.EnclosedMessageTypesMutator
+2012-12-27 23:28:16,876 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.BackwardCompatibility.OutgoingSubscriptionMessageMutator
+2012-12-27 23:28:16,876 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Sagas.Impl.OriginatingSagaHeaderMutator
+2012-12-27 23:28:16,877 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Sagas.Impl.AutoCorrelateSagaOnReplyMutator
+2012-12-27 23:28:16,877 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.MessageHeaders.MessageHeaderManager
+2012-12-27 23:28:16,877 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Impersonation.ImpersonationManager
+2012-12-27 23:28:16,877 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Gateway.HeaderManagement.GatewayHeaderManager
+2012-12-27 23:28:16,912 [5] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Sending message Unilib.Messages.CreateAuthorCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null with ID dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\6153 to destination unilib.communicationserver@admin.
+ToString() of the message yields: Unilib.Messages.CreateAuthorCommand
+Message headers:
+NServiceBus.Version:3.3.0, NServiceBus.TimeSent:2012-12-27 21:28:16:876197 Z, NServiceBus.EnclosedMessageTypes:Unilib.Messages.CreateAuthorCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, WinIdName:, CorrId:
+2012-12-27 23:28:21,168 [Worker.10] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Received message with ID dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\6155 from sender unilib.communicationserver@admin
+2012-12-27 23:28:21,174 [Worker.10] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Finished handling message.
+2012-12-27 23:31:51,445 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.VersionMutator
+2012-12-27 23:31:51,446 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.SentTimeMutator
+2012-12-27 23:31:51,446 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.RelatedToMessageMutator
+2012-12-27 23:31:51,446 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.EnclosedMessageTypesMutator
+2012-12-27 23:31:51,446 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.BackwardCompatibility.OutgoingSubscriptionMessageMutator
+2012-12-27 23:31:51,446 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Sagas.Impl.OriginatingSagaHeaderMutator
+2012-12-27 23:31:51,446 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Sagas.Impl.AutoCorrelateSagaOnReplyMutator
+2012-12-27 23:31:51,446 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.MessageHeaders.MessageHeaderManager
+2012-12-27 23:31:51,446 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Impersonation.ImpersonationManager
+2012-12-27 23:31:51,446 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Gateway.HeaderManagement.GatewayHeaderManager
+2012-12-27 23:31:51,478 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Sending message Unilib.Messages.CreateRecordCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null with ID dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\6157 to destination unilib.communicationserver@admin.
+ToString() of the message yields: Unilib.Messages.CreateRecordCommand
+Message headers:
+NServiceBus.Version:3.3.0, NServiceBus.TimeSent:2012-12-27 21:31:51:446470 Z, NServiceBus.EnclosedMessageTypes:Unilib.Messages.CreateRecordCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, WinIdName:, CorrId:
+2012-12-27 23:31:51,479 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.VersionMutator
+2012-12-27 23:31:51,479 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.SentTimeMutator
+2012-12-27 23:31:51,479 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.RelatedToMessageMutator
+2012-12-27 23:31:51,479 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.EnclosedMessageTypesMutator
+2012-12-27 23:31:51,479 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.BackwardCompatibility.OutgoingSubscriptionMessageMutator
+2012-12-27 23:31:51,479 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Sagas.Impl.OriginatingSagaHeaderMutator
+2012-12-27 23:31:51,479 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Sagas.Impl.AutoCorrelateSagaOnReplyMutator
+2012-12-27 23:31:51,479 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.MessageHeaders.MessageHeaderManager
+2012-12-27 23:31:51,479 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Impersonation.ImpersonationManager
+2012-12-27 23:31:51,479 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Gateway.HeaderManagement.GatewayHeaderManager
+2012-12-27 23:31:51,485 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Sending message Unilib.Messages.CreateAuthorRecordRelationCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null with ID dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\6159 to destination unilib.communicationserver@admin.
+ToString() of the message yields: Unilib.Messages.CreateAuthorRecordRelationCommand
+Message headers:
+NServiceBus.Version:3.3.0, NServiceBus.TimeSent:2012-12-27 21:31:51:479472 Z, NServiceBus.EnclosedMessageTypes:Unilib.Messages.CreateAuthorRecordRelationCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, WinIdName:, CorrId:
+2012-12-27 23:31:51,536 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.VersionMutator
+2012-12-27 23:31:51,536 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.SentTimeMutator
+2012-12-27 23:31:51,536 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.RelatedToMessageMutator
+2012-12-27 23:31:51,536 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.EnclosedMessageTypesMutator
+2012-12-27 23:31:51,536 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.BackwardCompatibility.OutgoingSubscriptionMessageMutator
+2012-12-27 23:31:51,536 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Sagas.Impl.OriginatingSagaHeaderMutator
+2012-12-27 23:31:51,536 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Sagas.Impl.AutoCorrelateSagaOnReplyMutator
+2012-12-27 23:31:51,536 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.MessageHeaders.MessageHeaderManager
+2012-12-27 23:31:51,536 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Impersonation.ImpersonationManager
+2012-12-27 23:31:51,536 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Gateway.HeaderManagement.GatewayHeaderManager
+2012-12-27 23:31:51,542 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Sending message Unilib.Queries.GetClassificationMessage, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null with ID dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\6161 to destination unilib.contentserver@admin.
+ToString() of the message yields: Unilib.Queries.GetClassificationMessage
+Message headers:
+NServiceBus.Version:3.3.0, NServiceBus.TimeSent:2012-12-27 21:31:51:536475 Z, NServiceBus.EnclosedMessageTypes:Unilib.Queries.GetClassificationMessage, Unilib.Queries, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, WinIdName:, CorrId:
+2012-12-27 23:31:52,819 [Worker.10] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Received message with ID dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\6163 from sender unilib.communicationserver@admin
+2012-12-27 23:31:52,819 [Worker.10] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Finished handling message.
+2012-12-27 23:31:53,624 [Worker.10] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Received message with ID dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\6165 from sender unilib.contentserver@admin
+2012-12-27 23:31:53,679 [Worker.10] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\6165
+System.InvalidOperationException: No handlers could be found for message type: Unilib.Queries.GetClassificationMessageResponse
+   в NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
+   в NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
+   в System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   в NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2012-12-27 23:31:54,490 [Worker.10] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Received message with ID dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\6165 from sender unilib.contentserver@admin
+2012-12-27 23:31:54,509 [Worker.10] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\6165
+System.InvalidOperationException: No handlers could be found for message type: Unilib.Queries.GetClassificationMessageResponse
+   в NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
+   в NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
+   в System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   в NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2012-12-27 23:31:55,318 [Worker.10] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Received message with ID dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\6165 from sender unilib.contentserver@admin
+2012-12-27 23:31:55,332 [Worker.10] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\6165
+System.InvalidOperationException: No handlers could be found for message type: Unilib.Queries.GetClassificationMessageResponse
+   в NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
+   в NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
+   в System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   в NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2012-12-27 23:31:56,170 [Worker.10] ERROR NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Message has failed the maximum number of times allowed, ID=dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\6165.
+2012-12-27 23:31:56,223 [Worker.12] DEBUG SecondLevelRetries [(null)] <(null)> - Defer message and send it to unilib.frontend@admin using the timeout manager at unilib.frontend.timeouts@admin
+2012-12-27 23:31:56,273 [Worker.12] ERROR SatelliteLauncher [(null)] <(null)> - SecondLevelRetries could not handle message. Exception: Failed to send message to address: [unilib.frontend.timeouts@admin]
+2012-12-27 23:31:56,285 [Worker.12] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\6165
+NServiceBus.Unicast.Queuing.QueueNotFoundException: Failed to send message to address: [unilib.frontend.timeouts@admin] ---> System.Messaging.MessageQueueException: Очередь не существует, или отсутствуют достаточные полномочия для выполнения операции.
+   в System.Messaging.MessageQueue.MQCacheableInfo.get_WriteHandle()
+   в System.Messaging.MessageQueue.StaleSafeSendMessage(MQPROPS properties, ITransaction transaction)
+   в System.Messaging.MessageQueue.StaleSafeSendMessage(MQPROPS properties, IntPtr transaction)
+   в System.Messaging.MessageQueue.SendInternal(Object obj, MessageQueueTransaction internalTransaction, MessageQueueTransactionType transactionType)
+   в System.Messaging.MessageQueue.Send(Object obj, MessageQueueTransactionType transactionType)
+   в NServiceBus.Unicast.Queuing.Msmq.MsmqMessageSender.NServiceBus.Unicast.Queuing.ISendMessages.Send(TransportMessage message, Address address)
+   --- Конец трассировки внутреннего стека исключений ---
+   в NServiceBus.Unicast.Queuing.Msmq.MsmqMessageSender.NServiceBus.Unicast.Queuing.ISendMessages.Send(TransportMessage message, Address address)
+   в NServiceBus.Management.Retries.SecondLevelRetries.Defer(TimeSpan defer, TransportMessage message)
+   в NServiceBus.Management.Retries.SecondLevelRetries.Handle(TransportMessage message)
+   в NServiceBus.Satellites.SatelliteLauncher.HandleMessageReceived(Object sender, TransportMessageReceivedEventArgs e, ISatellite satellite)
+   в NServiceBus.Satellites.SatelliteLauncher.<>c__DisplayClassa.<Execute>b__8(Object o, TransportMessageReceivedEventArgs e)
+   в NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2012-12-27 23:31:56,303 [Worker.12] DEBUG SecondLevelRetries [(null)] <(null)> - Defer message and send it to unilib.frontend@admin using the timeout manager at unilib.frontend.timeouts@admin
+2012-12-27 23:31:56,319 [Worker.12] ERROR SatelliteLauncher [(null)] <(null)> - SecondLevelRetries could not handle message. Exception: Failed to send message to address: [unilib.frontend.timeouts@admin]
+2012-12-27 23:31:56,325 [Worker.12] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\6165
+NServiceBus.Unicast.Queuing.QueueNotFoundException: Failed to send message to address: [unilib.frontend.timeouts@admin] ---> System.Messaging.MessageQueueException: Очередь не существует, или отсутствуют достаточные полномочия для выполнения операции.
+   в System.Messaging.MessageQueue.MQCacheableInfo.get_WriteHandle()
+   в System.Messaging.MessageQueue.StaleSafeSendMessage(MQPROPS properties, ITransaction transaction)
+   в System.Messaging.MessageQueue.StaleSafeSendMessage(MQPROPS properties, IntPtr transaction)
+   в System.Messaging.MessageQueue.SendInternal(Object obj, MessageQueueTransaction internalTransaction, MessageQueueTransactionType transactionType)
+   в System.Messaging.MessageQueue.Send(Object obj, MessageQueueTransactionType transactionType)
+   в NServiceBus.Unicast.Queuing.Msmq.MsmqMessageSender.NServiceBus.Unicast.Queuing.ISendMessages.Send(TransportMessage message, Address address)
+   --- Конец трассировки внутреннего стека исключений ---
+   в NServiceBus.Unicast.Queuing.Msmq.MsmqMessageSender.NServiceBus.Unicast.Queuing.ISendMessages.Send(TransportMessage message, Address address)
+   в NServiceBus.Management.Retries.SecondLevelRetries.Defer(TimeSpan defer, TransportMessage message)
+   в NServiceBus.Management.Retries.SecondLevelRetries.Handle(TransportMessage message)
+   в NServiceBus.Satellites.SatelliteLauncher.HandleMessageReceived(Object sender, TransportMessageReceivedEventArgs e, ISatellite satellite)
+   в NServiceBus.Satellites.SatelliteLauncher.<>c__DisplayClassa.<Execute>b__8(Object o, TransportMessageReceivedEventArgs e)
+   в NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2012-12-27 23:31:56,340 [Worker.12] DEBUG SecondLevelRetries [(null)] <(null)> - Defer message and send it to unilib.frontend@admin using the timeout manager at unilib.frontend.timeouts@admin
+2012-12-27 23:31:56,356 [Worker.12] ERROR SatelliteLauncher [(null)] <(null)> - SecondLevelRetries could not handle message. Exception: Failed to send message to address: [unilib.frontend.timeouts@admin]
+2012-12-27 23:31:56,362 [Worker.12] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\6165
+NServiceBus.Unicast.Queuing.QueueNotFoundException: Failed to send message to address: [unilib.frontend.timeouts@admin] ---> System.Messaging.MessageQueueException: Очередь не существует, или отсутствуют достаточные полномочия для выполнения операции.
+   в System.Messaging.MessageQueue.MQCacheableInfo.get_WriteHandle()
+   в System.Messaging.MessageQueue.StaleSafeSendMessage(MQPROPS properties, ITransaction transaction)
+   в System.Messaging.MessageQueue.StaleSafeSendMessage(MQPROPS properties, IntPtr transaction)
+   в System.Messaging.MessageQueue.SendInternal(Object obj, MessageQueueTransaction internalTransaction, MessageQueueTransactionType transactionType)
+   в System.Messaging.MessageQueue.Send(Object obj, MessageQueueTransactionType transactionType)
+   в NServiceBus.Unicast.Queuing.Msmq.MsmqMessageSender.NServiceBus.Unicast.Queuing.ISendMessages.Send(TransportMessage message, Address address)
+   --- Конец трассировки внутреннего стека исключений ---
+   в NServiceBus.Unicast.Queuing.Msmq.MsmqMessageSender.NServiceBus.Unicast.Queuing.ISendMessages.Send(TransportMessage message, Address address)
+   в NServiceBus.Management.Retries.SecondLevelRetries.Defer(TimeSpan defer, TransportMessage message)
+   в NServiceBus.Management.Retries.SecondLevelRetries.Handle(TransportMessage message)
+   в NServiceBus.Satellites.SatelliteLauncher.HandleMessageReceived(Object sender, TransportMessageReceivedEventArgs e, ISatellite satellite)
+   в NServiceBus.Satellites.SatelliteLauncher.<>c__DisplayClassa.<Execute>b__8(Object o, TransportMessageReceivedEventArgs e)
+   в NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2012-12-27 23:31:56,406 [Worker.12] ERROR NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Message has failed the maximum number of times allowed, ID=dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\6165.
+2012-12-27 23:31:57,007 [Worker.10] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Received message with ID dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\6167 from sender unilib.communicationserver@admin
+2012-12-27 23:31:57,008 [Worker.10] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Finished handling message.
+2012-12-27 23:32:10,644 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.VersionMutator
+2012-12-27 23:32:10,644 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.SentTimeMutator
+2012-12-27 23:32:10,644 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.RelatedToMessageMutator
+2012-12-27 23:32:10,644 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.Monitoring.EnclosedMessageTypesMutator
+2012-12-27 23:32:10,644 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Unicast.BackwardCompatibility.OutgoingSubscriptionMessageMutator
+2012-12-27 23:32:10,644 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Sagas.Impl.OriginatingSagaHeaderMutator
+2012-12-27 23:32:10,644 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Sagas.Impl.AutoCorrelateSagaOnReplyMutator
+2012-12-27 23:32:10,644 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.MessageHeaders.MessageHeaderManager
+2012-12-27 23:32:10,644 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Impersonation.ImpersonationManager
+2012-12-27 23:32:10,644 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Invoking transport message mutator: NServiceBus.Gateway.HeaderManagement.GatewayHeaderManager
+2012-12-27 23:32:10,673 [15] DEBUG NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Sending message Unilib.Messages.AddRecordClassificationCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null with ID dc51e6b8-ffd2-43c4-90d8-d43b63870a7b\6173 to destination unilib.communicationserver@admin.
+ToString() of the message yields: Unilib.Messages.AddRecordClassificationCommand
+Message headers:
+NServiceBus.Version:3.3.0, NServiceBus.TimeSent:2012-12-27 21:32:10:644568 Z, NServiceBus.EnclosedMessageTypes:Unilib.Messages.AddRecordClassificationCommand, Unilib.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, WinIdName:, CorrId:
