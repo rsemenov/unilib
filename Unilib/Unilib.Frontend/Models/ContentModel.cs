@@ -10,7 +10,11 @@ namespace Unilib.Frontend.Models
     public class ContentModel
     {
         [DisplayName("Тип файлу")]
-        public string[] dataType { get; set; }
-        public int[] SelectedThemes { get; set; }
+        public ListViewModel[] DataType { get; set; }
+        public int[] SelectedList { get; set; }
+
+        [DisplayName("Файл")]
+        [Required(ErrorMessage = "Оберіть файл")]
+        public HttpPostedFileBase ContentFile { get; set; }
     }
 }

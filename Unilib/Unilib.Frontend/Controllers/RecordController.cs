@@ -114,7 +114,8 @@ namespace Unilib.Frontend.Controllers
                 ThemeClassificationId = model.SelectedList[0]
             };
             Bus.Send(command);
-            return View(model);//RedirectToAction();
+            //return View(model);
+            return RedirectToAction("Upload", "Content");
         }
 
     }
