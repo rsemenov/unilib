@@ -1,10 +1,8 @@
 ﻿@model Unilib.Frontend.Models.RecordModel
 
 @{
-    ViewBag.Title = "CreateRecord";
+    ViewBag.Title = "Створення запису";
 }
-
-<h2>CreateRecord</h2>
 
 <script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
 <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
@@ -12,7 +10,7 @@
 @using (Html.BeginForm()) {
     @Html.ValidationSummary(true)
     <fieldset>
-        <legend>RecordModel</legend>
+        <legend>Сторінка створення нового запису. Заповніть відповідні поля:</legend>
 
         <div class="editor-label">
             @Html.LabelFor(model => model.SortTitle)
@@ -87,11 +85,7 @@
         </div>
 
         <p>
-            <input type="submit" value="Create" />
+            <input type="submit" value="Створити" />
         </p>
     </fieldset>
 }
-
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>

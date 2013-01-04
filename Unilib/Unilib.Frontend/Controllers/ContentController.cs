@@ -17,7 +17,8 @@ namespace Unilib.Frontend.Controllers
     {
         //
         // GET: /Content/
-        private IBus Bus;
+        public IBus Bus { get; set; }
+
         public ActionResult Upload()
         {
             ContentModel model = new ContentModel
@@ -46,14 +47,14 @@ namespace Unilib.Frontend.Controllers
         {
             AddRecordContentCommand command = new AddRecordContentCommand
             {
-                //RecordId = (Guid) Session["RecordId"],
+                RecordId = (Guid) Session["RecordId"],
                 DataType = (DataTypes)model.SelectedList[0],
                 DescriptionFile = null,
-                //ContentFile = new byte[model.ContentFile.ContentLength]
+                ContentFile = new byte[model.ContentFile.ContentLength]
             };
             model.ContentFile.InputStream.Read(command.ContentFile, 0, model.ContentFile.ContentLength);
             Bus.Send(command);
-            return View();
+            return RedirectToAction("Index", "Home"); ;
         }
 
     }

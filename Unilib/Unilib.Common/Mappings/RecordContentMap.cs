@@ -9,7 +9,7 @@ namespace Unilib.Common.Mappings
         {
             Id(x => x.RecordId).Column("RecordId").GeneratedBy.Assigned();
             Map(x => x.DataType).CustomType<DataTypes>().Not.Nullable();
-            Map(x => x.FileContent).Not.Nullable();
+            Map(x => x.FileContent).CustomSqlType("VARBINARY(MAX)").Length(int.MaxValue).Not.Nullable();
             Map(x => x.DescriptionContent).Nullable();
             Table("RecordContent");
         }
